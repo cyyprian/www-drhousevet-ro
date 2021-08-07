@@ -14,6 +14,7 @@
 
 - php artisan key:generate
 - composer install
+- php artisan voyager:install
 
 ## Developer
 - run laravel server: sh serve.sh
