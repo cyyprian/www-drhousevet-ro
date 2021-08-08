@@ -7,18 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Prerequisites
-- cp .env.example .env
+## Prerequisites & Install
+- Create a database
+- Import .sql file
 
+- cp .env.example .env
 - Fill database credentials
 
 - php artisan key:generate
 - composer install
 - php artisan voyager:install
-- php artisan migrate:fresh --seed
+- npm install
 
 ## Developer
-- run laravel server: sh serve.sh
+- run Laravel server: sh serve.sh
+- run Laravel mix: npm run watch
 
 ## Learning Laravel
 
