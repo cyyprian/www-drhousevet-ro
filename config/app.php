@@ -175,6 +175,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+
+        App\Providers\F1ServiceProvider::class,
+
     ],
 
     /*
@@ -228,6 +232,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'F1' => App\Facades\F1Facade::class,
 
     ],
 
