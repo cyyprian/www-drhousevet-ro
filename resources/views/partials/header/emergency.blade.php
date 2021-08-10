@@ -6,7 +6,7 @@
             @foreach(F1::getDataOfModel('branches') as $row)
                 @if ($row->emergency_phone)
                 <p>
-                    Urgente: <span>{{ $row->emergency_phone }}</span>
+                    Urgente <span>{{ $row->emergency_phone }}</span>
                 </p>
                 @endif
             @endforeach

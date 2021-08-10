@@ -1,7 +1,7 @@
 require('./test.js');
-require('../html5/html5shiv.min.js');
-require('../html5/respond.min.js');
-require('./test/bootsnav.js');
+require('./html5/html5shiv.min.js');
+require('./html5/respond.min.js');
+require('./bootsnav.js');
 require('./bootstrap.min.js');
 require('./Chart.min.js');
 require('./circle-progress.js');
@@ -21,4 +21,4 @@ require('./plugins.min.js');
 require('./popper.min.js');
 require('./progress-bar.min.js');
 require('./wow.min.js');
-require('./YTPlayer.js');
+require('./YTPlayer.min.js');

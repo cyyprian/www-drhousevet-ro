@@ -8,11 +8,24 @@
                 <a href='{{ url($row->slug) }}'>{{ $row->title }}</a>
             </li>
         @endforeach
+<!-- 
+        @foreach(F1::getDataOfModel('page') as $row)
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $row->title }}</a>
+                <ul class="dropdown-menu">
+                    @if(strcmp($row->slug, 'servicii') !== 0)
+                        @foreach(F1::getDataOfModel('service') as $opt)
+                            <li><a href="{{ url($opt->slug) }}">{{ $opt->title }</a></li>
+                        @endforeach
+                    @endif
+                </ul>
+            </li>
+        @endforeach -->
     
     
 
         <!-- <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Home</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acasa</a>
             <ul class="dropdown-menu">
                 <li><a href="index.html">Home Version One</a></li>
                 <li><a href="index-2.html">Home Version Two</a></li>

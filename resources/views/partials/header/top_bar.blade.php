@@ -18,7 +18,7 @@
                                         <i class="flaticon-email"></i>
                                     </div>
                                     <div class="info">
-                                        <span>Email:</span> {{$row->email}}
+                                        <span>Email</span> {{$row->email}}
                                     </div>
                                 </li>
                                 <li>
@@ -26,7 +26,7 @@
                                         <i class="flaticon-call"></i>
                                     </div>
                                     <div class="info">
-                                        <span>Tel:</span> {{$row->phone}}
+                                        <span>Telefon</span> {{$row->phone}}
                                     </div>
                                 </li>
                                 <li>
@@ -34,7 +34,7 @@
                                         <i class="flaticon-clock-1"></i>
                                     </div>
                                     <div class="info">
-                                        <span>Program:</span> {{$row->office_hours}}
+                                        <span>Program</span> {{$row->office_hours}}
                                     </div> 
                                 </li>
                             @endif
