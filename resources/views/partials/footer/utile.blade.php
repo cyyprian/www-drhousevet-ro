@@ -2,24 +2,9 @@
     <div class="f-item link">
         <h4 class="widget-title">Linkuri Utile</h4>
         <ul>
-            <li>
-                <a href="#">Ambulance</a>
-            </li>
-            <li>
-                <a href="#">Emergency</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Project</a>
-            </li>
-            <li>
-                <a href="#">About Us</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+            @foreach(F1::getDataOfModel('page') as $row)
+                <li><a href="{{ url($row->slug) }}">{{ $row->title }}</a></li>
+            @endforeach
         </ul>
     </div>
 </div>

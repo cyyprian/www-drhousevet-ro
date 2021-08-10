@@ -13,9 +13,10 @@ class F1 {
   protected $models = [
     'page' => \App\Models\Page::class,
     'post' => \App\Models\Post::class,
-    'service' => \App\Models\Services::class,
+    'service' => \App\Models\Service::class,
     'faq' => \App\Models\Faq::class,
     'openinghour' => \App\Models\OpeningHour::class,
+    'branches' => \App\Models\Branch::class,
   ];
 
   public function getDataOfModel($name) {

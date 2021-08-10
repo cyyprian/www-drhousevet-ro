@@ -1,5 +1,5 @@
 @extends('layouts.site')
 
 @section('content')
-  {!! $page->body !!}
+  Continutul paginii faqs [FILE]
 @endsection

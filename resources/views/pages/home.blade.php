@@ -5,13 +5,8 @@
 @extends('layouts.site')
 
 @section('content')
-
-  <table class="table table-borderless table-hover">
-    <thead>
-      <tr>
-        <!-- <th scope="col"></th> -->
-      </tr>
-    </thead>
+  Continutul paginii acasa [FILE]
+  <!-- <table class="table table-borderless table-hover">
     <tbody>
       @foreach(F1::getDataOfModel('page') as $row)
         <tr class="row-page" data-href='{{ url($row->slug) }}'>
@@ -23,10 +18,7 @@
         </tr>
       @endforeach
     </tbody>
-  </table>
-
-
-
+  </table> -->
 
 
 @endsection

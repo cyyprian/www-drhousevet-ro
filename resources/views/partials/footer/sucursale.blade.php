@@ -3,14 +3,12 @@
         <h4 class="widget-title">Sucursale</h4>
         <div class="branches">
             <ul>
-                <li>
-                    <strong>ACMH Hospital:</strong> 
-                    <span>4992 Bryan Avenue, Prior Lake, Minnesota <br> Phone: 651-379-4698</span>
-                </li>
-                <li>
-                    <strong>Central Hospital:</strong> 
-                    <span>2001 Kia Magentis, Prior Lake, Minnesota <br> Phone: 651-379-4698</span>
-                </li>
+                @foreach(F1::getDataOfModel('branches') as $row)
+                    <li>
+                    <strong>{{ $row->name }}:</strong> 
+                    <span>Addresa: {{ $row->address }} <br> Telefon: {{ $row->phone }}</span>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>

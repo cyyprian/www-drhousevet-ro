@@ -1,12 +1,12 @@
 <div class="single-item col-lg-4 col-md-6 item">
     <div class="f-item about">
-        <h4 class="widget-title">About Us</h4>
+        <h4 class="widget-title">Despre noi</h4>
         <p>
-            Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted
+            Clinica noastra veterinara ofera servicii medicale de cea mai inalta calitate in orasul Tecuci.
         </p>
-        <a class="btn btn-md left-icon btn-gradient" href="#"><i class="fas fa-plus"></i> Blood Bank</a>
+        <a class="btn btn-md left-icon btn-gradient" href="#"><i class="fas fa-plus"></i>Afla mai mult</a>
         <div class="social">
-            <h5>Get Us:</h5>
+            <h5>Retele sociale:</h5>
             <ul>
                 <li class="facebook">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
