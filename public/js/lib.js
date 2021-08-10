@@ -34431,12 +34431,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 /*!********************************!*\
   !*** ./resources/css/root.css ***!
   \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve '../fonts/Flaticon.eot' in '/Users/Alin/github/www-drhousevet-ro/resources/theme/css'\n    at finishWithoutResolve (/Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:293:18)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:362:15\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at processResult (/Users/Alin/github/www-drhousevet-ro/node_modules/webpack/lib/NormalModule.js:713:19)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/webpack/lib/NormalModule.js:819:5\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/Alin/github/www-drhousevet-ro/node_modules/css-loader/dist/index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)");
 
 /***/ }),
 
@@ -34496,12 +34493,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./resources/theme/css/root.css ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve './Flaticon.svg#Flaticon' in '/Users/Alin/github/www-drhousevet-ro/resources/theme/css'\n    at finishWithoutResolve (/Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:293:18)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:362:15\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at eval (eval at create (/Users/Alin/github/www-drhousevet-ro/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/enhanced-resolve/lib/Resolver.js:410:5\n    at processResult (/Users/Alin/github/www-drhousevet-ro/node_modules/webpack/lib/NormalModule.js:713:19)\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/webpack/lib/NormalModule.js:819:5\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/Alin/github/www-drhousevet-ro/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/Alin/github/www-drhousevet-ro/node_modules/css-loader/dist/index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)");
 
 /***/ }),
 
@@ -37453,9 +37447,9 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/lib": 0,
-/******/ 			"css/theme": 0,
 /******/ 			"css/lib": 0,
-/******/ 			"css/site": 0
+/******/ 			"css/site": 0,
+/******/ 			"css/theme": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -37503,13 +37497,13 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/lib/js/root.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/lib/sass/root.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/theme/sass/root.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/sass/root.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/lib/css/root.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/theme/css/root.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/theme","css/lib","css/site"], () => (__webpack_require__("./resources/css/root.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/lib/js/root.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/lib/sass/root.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/theme/sass/root.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/sass/root.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/lib/css/root.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/theme/css/root.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/lib","css/site","css/theme"], () => (__webpack_require__("./resources/css/root.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
