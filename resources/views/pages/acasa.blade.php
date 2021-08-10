@@ -5,6 +5,7 @@
 @extends('layouts.site')
 
 @section('content')
+
   <table class="table table-borderless table-hover">
     <thead>
       <tr>
@@ -23,4 +24,9 @@
       @endforeach
     </tbody>
   </table>
+
+
+
+
+
 @endsection

@@ -26,8 +26,9 @@
 
   <body class="antialiased">
     <div class="container">
-      @include('partials.nav')
+      @include('partials/header.header')
       @yield('content')
+      @include('partials/footer.footer')
     </div>
   </body>
 </html>
