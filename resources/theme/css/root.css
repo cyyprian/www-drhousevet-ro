@@ -1,12 +1,19 @@
 @import "./test.css";
+
+@import "./bootstrap.min.css";
+@import "./font-awesome.min.css";
+@import "./themify-icons.css";
+@import "./flaticon-set.css";
+@import "./magnific-popup.css";
+@import "./owl.carousel.min.css";
+@import "./owl.theme.default.min.css";
 @import "./animate.css";
 @import "./bootsnav.css";
-@import "./bootstrap.min.css";
-/* @import "./flaticon-set.css"; */
-/* @import "./font-awesome.min.css"; */
-@import "./magnific-popup.css";
-/* @import "./owl.carousel.min.css"; */
-/* @import "./plugins.min.css"; */
-@import "./responsive.css";
-/* @import "./themify-icons.css"; */
 @import "./style.css";
+@import "./responsive.css";
+
+/* @import "./plugins.min.css"; */
+
+
+
+

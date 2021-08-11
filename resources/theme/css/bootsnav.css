@@ -347,7 +347,7 @@ nav.bootsnav.nav-box .dropdown-menu {
   display: flex;
   align-items: center;
   padding: 17px 0;
-  color: #0cb8b6;
+  color: #55c0ac;
 }
 
 .navbar .attr-nav.contact li span {
@@ -362,7 +362,7 @@ nav.bootsnav.nav-box .dropdown-menu {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #0cb8b6;
+  color: #55c0ac;
 }
 
 .navbar .attr-nav.contact li i {
@@ -432,7 +432,7 @@ nav.bootsnav .dropdown.megamenu-fw .dropdown-menu {
 }
 
 .navbar .side .widget .contact li .icon i {
-  color: #0cb8b6;
+  color: #55c0ac;
   font-size: 40px;
   display: inline-block;
   text-align: center;
@@ -462,7 +462,7 @@ nav.navbar .quote-btn a {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  border: 2px solid #0cb8b6;
+  border: 2px solid #55c0ac;
   text-transform: uppercase;
   top: -2px;
   letter-spacing: 0.6px;
@@ -505,7 +505,7 @@ nav.bootsnav.navbar-sidebar.bg-dark ul.nav li.dropdown h6 {
 }
 
 .attr-nav ul.cart-list li.total a {
-  background: #0cb8b6 none repeat scroll 0 0;
+  background: #55c0ac none repeat scroll 0 0;
   display: inline-block;
   font-weight: 600 !important;
   padding: 12px 15px;
@@ -513,7 +513,7 @@ nav.bootsnav.navbar-sidebar.bg-dark ul.nav li.dropdown h6 {
 }
 
 .attr-nav ul.cart-list li.total a:hover {
-  background: #0cb8b6 none repeat scroll 0 0 !important;
+  background: #55c0ac none repeat scroll 0 0 !important;
   color: #ffffff !important;
 }
 
@@ -689,7 +689,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a .badge {
   padding: 3px 10px;
   font-weight: 600;
   margin-left: 4px;
-  background: #0cb8b6;
+  background: #55c0ac;
   color: #ffffff;
   border-radius: 5px;
 }
@@ -803,7 +803,7 @@ nav.navbar.attr-border .attr-nav::before {
 }
 
 .attr-nav > ul > li > a span.badge {
-  background-color: #0cb8b6;
+  background-color: #55c0ac;
   color: #ffffff;
   height: 20px;
   line-height: 20px;
@@ -901,7 +901,7 @@ ul.cart-list > li.total > span {
 }
 
 .navbar.bg-dark .top-search {
-  background: #0cb8b6 none repeat scroll 0 0;
+  background: #55c0ac none repeat scroll 0 0;
 }
 
 .top-search form {
@@ -1059,7 +1059,7 @@ body.on-side .body-overlay {
 }
 
 .navbar .side .widget li a:hover {
-  color: #0cb8b6;
+  color: #55c0ac;
 }
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:hover::after {
@@ -1092,7 +1092,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .navbar .side .widget.social li a:hover {
-  background: #0cb8b6 none repeat scroll 0 0;
+  background: #55c0ac none repeat scroll 0 0;
   color: #ffffff;
 }
 
@@ -1169,7 +1169,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
   background: #f4f4f4 none repeat scroll 0 0;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
-  color: #0cb8b6;
+  color: #55c0ac;
   font-size: 20px;
   height: 50px;
   line-height: 48px;
@@ -1222,7 +1222,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .side .widget ul.link li a {
-  color: #0cb8b6;
+  color: #55c0ac;
   display: block;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1267,7 +1267,7 @@ nav.navbar.bootsnav .share ul > li > a {
 }
 
 nav.navbar.bootsnav .share.dark ul > li > a {
-  background-color: #0cb8b6;
+  background-color: #55c0ac;
   color: #ffffff;
 }
 
@@ -1276,7 +1276,7 @@ nav.navbar.bootsnav.color-yellow .share.dark ul > li > a {
 }
 
 nav.navbar.bootsnav .share ul > li > a:hover {
-  color: #0cb8b6;
+  color: #55c0ac;
 }
 
 nav.navbar.bootsnav.color-yellow .share ul > li > a:hover {
@@ -1382,7 +1382,7 @@ nav.navbar.bootsnav {
 
 
   nav.navbar.bootsnav.bg-theme {
-    background: #0cb8b6;
+    background: #55c0ac;
   }
 
   nav.navbar.bootsnav.bg-theme ul.nav > li > a {
@@ -1419,7 +1419,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 100%;
     width: 15%;
-    background: #0cb8b6;
+    background: #55c0ac;
     z-index: -1;
   }
 
@@ -1441,7 +1441,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 93px;
     width: 500%;
-    background: #0cb8b6;
+    background: #55c0ac;
     z-index: -1;
   }
 
@@ -1470,11 +1470,11 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li > a.active {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.active-bg ul.nav > li > a.active {
-    background: #0cb8b6 !important;
+    background: #55c0ac !important;
   }
 
   nav.navbar.bootsnav.active-border ul.nav > li > a.active {
@@ -1489,7 +1489,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 0px;
     width: 80%;
-    border-bottom: 3px solid #0cb8b6;
+    border-bottom: 3px solid #55c0ac;
   }
 
   nav.navbar.bootsnav.small-pad ul.nav > li > a {
@@ -1517,7 +1517,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li.active > a {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.color-yellow ul.nav > li.active > a {
@@ -1530,7 +1530,7 @@ nav.navbar.bootsnav {
 
   nav.navbar.bootsnav.active-full ul.nav > li > a.active,
     nav.navbar.bootsnav.active-full ul.nav > li > a:hover {
-    background: #0cb8b6 none repeat scroll 0 0 !important;
+    background: #55c0ac none repeat scroll 0 0 !important;
     color: #ffffff;
   }
 
@@ -1544,7 +1544,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li > a:hover {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.color-yellow ul.nav > li > a:hover {
@@ -1624,7 +1624,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.color-yellow ul.navbar-right li.dropdown ul.dropdown-menu li a:hover {
@@ -1632,7 +1632,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.color-yellow ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
@@ -1724,7 +1724,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.navbar.bootsnav.color-yellow ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
@@ -2019,7 +2019,7 @@ nav.navbar.bootsnav {
   }
 
   nav.bootsnav.navbar-sidebar ul.nav > li > a:hover {
-    color: #0cb8b6;
+    color: #55c0ac;
   }
 
   nav.bootsnav.navbar-sidebar.color-yellow ul.nav > li > a:hover {
@@ -2373,7 +2373,7 @@ nav.navbar.bootsnav {
 
   nav.navbar.bootsnav ul.nav li.dropdown > ul.dropdown-menu li:hover > a {
     background-color: transparent !important;
-    color: #0cb8b6 !important;
+    color: #55c0ac !important;
   }
 
   nav.navbar.bootsnav.color-yellow ul.nav li.dropdown > ul.dropdown-menu li:hover > a {
@@ -2883,7 +2883,7 @@ nav.navbar-transparent .attr-nav > ul > li.contact {
   font-size: 25px;
   position: relative;
   float: left;
-  color: #0cb8b6;
+  color: #55c0ac;
   top: 3px;
 }
 
@@ -2917,7 +2917,7 @@ nav.navbar-transparent .attr-nav > ul > li.contact i {
 }
 
 .attr-nav.menu li:last-child a {
-  background: #0cb8b6 none repeat scroll 0 0;
+  background: #55c0ac none repeat scroll 0 0;
   border-radius: 30px;
   color: #ffffff !important;
   padding: 5px 20px !important;
@@ -3344,7 +3344,7 @@ body.wrap-nav-sidebar {
 
 .attr-nav.button li a i {
   margin-right: 3px;
-  color: #0cb8b6;
+  color: #55c0ac;
 }
 
 .attr-nav.button li a i.fa-user {

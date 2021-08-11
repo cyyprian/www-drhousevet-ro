@@ -5,7 +5,7 @@
 @extends('layouts.site')
 
 @section('content')
-  Continutul paginii acasa [FILE]
+  @include('../partials/sliders/slider')
   <!-- <table class="table table-borderless table-hover">
     <tbody>
       @foreach(F1::getDataOfModel('page') as $row)

@@ -2,28 +2,8 @@
 <div class="collapse navbar-collapse" id="navbar-menu">
     <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
 
-
-        @foreach(F1::getDataOfModel('page') as $row)
-            <li>
-                <a href='{{ url($row->slug) }}'>{{ $row->title }}</a>
-            </li>
-        @endforeach
-<!-- 
-        @foreach(F1::getDataOfModel('page') as $row)
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $row->title }}</a>
-                <ul class="dropdown-menu">
-                    @if(strcmp($row->slug, 'servicii') !== 0)
-                        @foreach(F1::getDataOfModel('service') as $opt)
-                            <li><a href="{{ url($opt->slug) }}">{{ $opt->title }</a></li>
-                        @endforeach
-                    @endif
-                </ul>
-            </li>
-        @endforeach -->
-    
-    
-
+        {{menu('site', 'bootstrap')}}
+       
         <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acasa</a>
             <ul class="dropdown-menu">

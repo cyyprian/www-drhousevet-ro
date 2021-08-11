@@ -4,8 +4,8 @@
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-3 logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo-light.png" class="logo" alt="Logo">
+                    <a href="home">
+                        <img src="{{ asset('assets/img/logo-light.png') }}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <div class="col-lg-9 address-info text-right">
@@ -18,7 +18,9 @@
                                         <i class="flaticon-email"></i>
                                     </div>
                                     <div class="info">
-                                        <span>Email</span> {{$row->email}}
+                                        <a href = "mailto: {{$row->email}}" style="color: #666666; font-weight:normal;">
+                                            <span>Email</span> {{$row->email}}
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -26,12 +28,14 @@
                                         <i class="flaticon-call"></i>
                                     </div>
                                     <div class="info">
+                                        <a href="tel:+4{{$row->phone}}" style="color: #666666; font-weight:normal;">
                                         <span>Telefon</span> {{$row->phone}}
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <i class="flaticon-clock-1"></i>
+                                        <i class="flaticon-clock-1" style="color: #666666; font-weight:normal;"></i>
                                     </div>
                                     <div class="info">
                                         <span>Program</span> {{$row->office_hours}}

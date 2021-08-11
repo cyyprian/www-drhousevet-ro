@@ -6,7 +6,36 @@
                 @foreach(F1::getDataOfModel('branches') as $row)
                     <li>
                     <strong>{{ $row->name }}:</strong> 
-                    <span>Addresa: {{ $row->address }} <br> Telefon: {{ $row->phone }}</span>
+                   
+                    <span>
+                        <a href="https://maps.google.com/?q={{$row->coordinates_north}}, {{$row->coordinates_east}}"
+                        target="_blank"
+                        style="margin: 0;
+                                padding: 0;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                color: #55c0ac;">
+                           Deschide harta
+                        </a>
+                        <br>
+                        Addresa:
+                        <a href="https://maps.google.com/?q={{$row->coordinates_north}}, {{$row->coordinates_east}}" target="_blank">
+                            {{ $row->address }} 
+                        </a> 
+                        
+                        <br> 
+                        Email: 
+                        <a href = "mailto: {{$row->email}}" style="color: white; font-weight:normal;">
+                            {{$row->email}} 
+                        </a>
+                        <br> 
+                        Telefon: 
+                        <a href="tel:+4{{$row->phone}}" style="color: white; font-weight:normal;">
+                            {{ $row->phone }}
+                        </a>
+                        <br>
+                        </span>
                     </li>
                 @endforeach
             </ul>

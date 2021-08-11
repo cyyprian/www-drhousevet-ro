@@ -3,7 +3,7 @@
         <h4 class="widget-title">Servicii</h4>
         <ul>
             @foreach(F1::getDataOfModel('service') as $row)
-                <li><a href="servicii">{{ $row->title }}</a></li>
+                <li><a href="servicii/{{$row->slug}}">{{ $row->title }}</a></li>
             @endforeach
         </ul>
     </div>

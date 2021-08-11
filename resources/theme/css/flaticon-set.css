@@ -17,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("./Flaticon.svg#Flaticon") format("svg");
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
   }
 }
 
