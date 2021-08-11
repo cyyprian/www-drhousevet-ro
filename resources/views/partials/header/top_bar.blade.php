@@ -5,7 +5,7 @@
             <div class="row align-center">
                 <div class="col-lg-3 logo">
                     <a href="home">
-                        <img src="{{ asset('assets/img/logo-light.png') }}" class="logo" alt="Logo">
+                        <img src="{{ Voyager::image(setting('site.logo')) }}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <div class="col-lg-9 address-info text-right">
