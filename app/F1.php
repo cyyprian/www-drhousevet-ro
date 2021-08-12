@@ -48,6 +48,14 @@ class F1 {
     return $this->models[$name]::where('slug', $slug)->first();
   }
 
+   //Get ascending sorted data by display_order column
+   public function getSortedDataOfModel($name, $column) {
+    if(!isset($this->models[$name])) abort(404, 'Model does not exist.');
+    return $this->models[$name]::orderBy($column)->get();
+  }
+
+  
+
   public function setSeoValues($title, $description, $image = null) {
     if(!$image) {
       $image = \Voyager::image(setting('site.representative_photo'));
