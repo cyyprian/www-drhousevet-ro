@@ -7,7 +7,7 @@
             <div class="carousel-inner carousel-zoom">
                 @foreach(F1::getDataOfModel('slide') as $row)
                     <div class="carousel-item {{$row->status}}">
-                        <div class="slider-thumb bg-cover" style="background-image: {{ Voyager::image($row->thumbnail('large')) }};"></div>
+                        <img class="slider-thumb bg-cover" src="{{ Voyager::image($row->image) }}"></img>
                         <div class="box-table">
                             <div class="box-cell">
                                 <div class="container">
