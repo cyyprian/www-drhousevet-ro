@@ -6,7 +6,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
                 @foreach(F1::getSortedDataOfModel('slide', 'display_order') as $row)
-                    <div class="carousel-item {{$row->display_order == 1 ? 'active': ''}}">
+                    <div class="carousel-item {{$loop->first ? 'active': ''}}">
                     
                         <div class="slider-thumb bg-cover" style="background-image: url({{ Voyager::image($row->image) }});">
    

@@ -9857,6 +9857,7 @@ body,
 .about-area .info ul li .info span::after {
   position: absolute;
   left: 0;
+  top: 0;
   content: "\f058";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -10088,7 +10089,8 @@ body,
   display: inline-block;
 }
 
-.department-single-area .widget.link li a:hover {
+.department-single-area .widget.link li a:hover,
+.about-area .info ul li .info span a:hover {
   color: #55c0ac;
 }
 
