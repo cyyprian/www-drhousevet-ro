@@ -4810,7 +4810,7 @@ body,
 .gallery-area .gallery-items .item .info .info-items .right-info a {
   display: inline-block;
   padding: 0 40px;
-  background: linear-gradient(90deg, rgba(12,184,182,1) 0%, rgba(11,145,144,1) 75%);
+  background: linear-gradient(90deg, rgba(85, 192, 172, 1) 0%, rgba(62, 168, 148, 1) 75%);
   color: #ffffff;
   position: absolute;
   height: 100%;

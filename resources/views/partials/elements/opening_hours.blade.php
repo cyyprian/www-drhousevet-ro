@@ -13,11 +13,16 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <i class="flaticon-ambulance-1"></i>
-                            <h4>Emergency Case</h4>
+                            <h4>{{F1::getRowDataOfModel('general_naming', 'emergency')->name}}</h4>
                             <p>
-                                Moment he at on wonder at season little. Six garden result summer set family esteem nay estate.
+                            {{F1::getRowDataOfModel('general_naming', 'emergency')->description}}
                             </p>
-                            <a class="btn circle btn-theme border btn-sm" href="#">Read More</a>
+                            @foreach(F1::getDataOfModel('branches') as $row)
+                                @if ($row->emergency_phone)
+                                    <a class="btn circle btn-theme border btn-sm" href="tel:+4{{ $row->emergency_phone }}">Suna acum</a>
+                                @endif
+                            @endforeach
+                           
                         </div>
                     </div>
                     <!-- End Single Item -->
@@ -25,17 +30,13 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <i class="flaticon-clock"></i>
-                            <h4>Opening Hours</h4>
+                            <h4>Program de lucru</h4>
                             <ul>
-                                <li> <span> Mon - Tue :  </span>
-                                  <div class="float-right"> 8:00 - 17:30 </div>
+                                @foreach(F1::getDataOfModel('openinghour') as $row)
+                                <li> <span>{{$row->day}} </span>
+                                  <div class="float-right"> {{$row->start}} {{$row->end ? '- ' . $row->end : ''}} </div>
                                 </li>
-                                <li> <span> Wed - Thu :</span>
-                                  <div class="float-right"> 9:00 - 16:45 </div>
-                                </li>
-                                <li> <span> Sun : </span>
-                                  <div class="float-right closed"> Closed </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -44,11 +45,10 @@
                     <div class="col-lg-4 single-item">
                         <div class="item">
                             <i class="flaticon-ribbon"></i>
-                            <h4>Cancer Care</h4>
+                            <h4>{{F1::getRowDataOfModel('general_naming', 'experience')->name}}</h4>
                             <p>
-                                Moment he at on wonder at season little. Six garden result summer set family esteem nay estate.
+                            {{F1::getRowDataOfModel('general_naming', 'experience')->description}}
                             </p>
-                            <a class="btn circle btn-theme border btn-sm" href="#">Read More</a>
                         </div>
                     </div>
                     <!-- End Single Item -->

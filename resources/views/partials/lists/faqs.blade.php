@@ -15,5 +15,15 @@
                             </div>
                         </div>
                         @endforeach
+                        <a href="{{url('faqs')}}" 
+                        style="margin: 0;
+                                padding: 0;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                color: #55c0ac;">
+                        
+                    Afla toate raspunsurile
+                </a>
                     </div>
                 </div>

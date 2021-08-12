@@ -1,1 +1,1 @@
-qwe
+Pagina individuala a serviciului

@@ -7,6 +7,8 @@
   @include('../partials/elements/prezentare_servicii')
   @include('..partials/elements/articole_si_faqs')
   @include('..partials/elements/opening_hours')
+  @include('..partials/sliders.gallery')
+
 
   <!-- <table class="table table-borderless table-hover">
     <tbody>

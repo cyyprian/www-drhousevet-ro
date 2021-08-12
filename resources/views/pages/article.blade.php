@@ -2,4 +2,4 @@
     // dd($page);
 ?>
 
-{{ $page->body }}
+Pagina individuala a articolului

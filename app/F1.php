@@ -19,6 +19,7 @@ class F1 {
     'branches' => \App\Models\Branch::class,
     'socials' => \App\Models\SocialMedia::class,
     'slide' => \App\Models\Slide::class,
+    'general_naming' => \App\Models\GeneralNaming::class,
   ];
 
   protected $translate = [
