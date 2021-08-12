@@ -18,6 +18,7 @@ class F1 {
     'openinghour' => \App\Models\OpeningHour::class,
     'branches' => \App\Models\Branch::class,
     'socials' => \App\Models\SocialMedia::class,
+    'slide' => \App\Models\Slide::class,
   ];
 
   protected $translate = [

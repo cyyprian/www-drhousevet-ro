@@ -5,48 +5,28 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner carousel-zoom">
-                <div class="carousel-item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="content">
-                                            <h2 data-animation="animated slideInDown">Meet the <strong>Best Doctors</strong></h2>
-                                            <p  data-animation="animated slideInLeft">
-                                                Preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. 
-                                            </p>
-                                            <a data-animation="animated fadeInUp" class="btn btn-md btn-gradient" href="#">Discover More</a>
-                                            <a data-animation="animated fadeInDown" class="btn btn-md btn-light effect" href="#">Contact Us <i class="fas fa-angle-right"></i></a>
+                @foreach(F1::getDataOfModel('slide') as $row)
+                    <div class="carousel-item {{$row->status}}">
+                        <div class="slider-thumb bg-cover" style="background-image: {{ Voyager::image($row->thumbnail('large')) }};"></div>
+                        <div class="box-table">
+                            <div class="box-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <div class="content">
+                                                <h2 data-animation="animated slideInDown">{{$row->title}}<strong>{{$row->title_bold}}</strong></h2>
+                                                <p  data-animation="animated slideInLeft" style="text-align: justify;">{{$row->description}}</p>
+                                                <a data-animation="animated fadeInUp" class="btn btn-md btn-gradient" href="{{$row->primary_button_link}}">{{$row->primary_button_text}}</a>
+                                                <a data-animation="animated fadeInDown" class="btn btn-md btn-light effect" href="{{$row->secondary_button_link}}">{{$row->secondary_button_text}}<i class="fas fa-angle-right"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="content">
-                                            <h2 data-animation="animated slideInDown">Safe your <strong>Own Health</strong></h2>
-                                            <p  data-animation="animated slideInLeft">
-                                                Preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. 
-                                            </p>
-                                            <a data-animation="animated fadeInUp" class="btn btn-md btn-gradient" href="#">Discover More</a>
-                                            <a data-animation="animated fadeInDown" class="btn btn-md btn-light effect" href="#">Contact Us <i class="fas fa-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
             <!-- End Wrapper for slides -->
 

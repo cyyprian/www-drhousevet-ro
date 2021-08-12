@@ -1,11 +1,10 @@
 <?php
   // dd($page);
 ?>
-
 @extends('layouts.site')
-
 @section('content')
   @include('../partials/sliders/slider')
+
   <!-- <table class="table table-borderless table-hover">
     <tbody>
       @foreach(F1::getDataOfModel('page') as $row)
@@ -19,6 +18,5 @@
       @endforeach
     </tbody>
   </table> -->
-
 
 @endsection
