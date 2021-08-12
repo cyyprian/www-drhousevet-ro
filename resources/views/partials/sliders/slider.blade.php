@@ -7,15 +7,19 @@
             <div class="carousel-inner carousel-zoom">
                 @foreach(F1::getDataOfModel('slide') as $row)
                     <div class="carousel-item {{$row->status}}">
-                        <div class="slider-thumb bg-cover" style="background-image: url({{ Voyager::image($row->image) }});"></div>
-                        <div class="box-table">
+                    
+                        <div class="slider-thumb bg-cover" style="background-image: url({{ Voyager::image($row->image) }});">
+   
+                        </div>
+                        
+                        <div class="box-table semi-transp">
                             <div class="box-cell">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-9">
                                             <div class="content">
-                                                <h2 data-animation="animated slideInDown">{{$row->title}}<strong>{{$row->title_bold}}</strong></h2>
-                                                <p  data-animation="animated slideInLeft" style="text-align: justify;">{{$row->description}}</p>
+                                                <h2 data-animation="animated slideInDown" style="color:#f2f2f2;">{{$row->title}}<strong>{{$row->title_bold}}</strong></h2>
+                                                <p  data-animation="animated slideInLeft" style="text-align: justify; color: #f2f2f2;">{{$row->description}}</p>
                                                 <a data-animation="animated fadeInUp" class="btn btn-md btn-gradient" href="{{$row->primary_button_link}}">{{$row->primary_button_text}}</a>
                                                 <a data-animation="animated fadeInDown" class="btn btn-md btn-light effect" href="{{$row->secondary_button_link}}">{{$row->secondary_button_text}}<i class="fas fa-angle-right"></i></a>
                                             </div>
@@ -23,7 +27,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            
+                        </div> 
+                        
+                         
                     </div>
                 @endforeach
 
