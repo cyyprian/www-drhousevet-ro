@@ -13550,6 +13550,11 @@ footer .f-item.link li a:hover,
   color: #55c0ac;
 }
 
+.fa-angle-left,
+.fa-angle-right {
+  color: #55c0ac3e;
+}
+
 footer .f-item.link li:last-child {
   margin-bottom: 0;
 }
