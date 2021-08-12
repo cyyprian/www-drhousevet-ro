@@ -1,14 +1,18 @@
  <!-- Start Our About
     ============================================= -->
     <div class="about-area default-padding">
+         <!-- Shape -->
+         <div class="shape" style="    position: absolute;right: 0; bottom: 0;z-index: -1;">
+            <img src="{{asset('assets/img/shape/1.png')}}" alt="Shape">
+        </div>
         <div class="container">
             <div class="about-items">
                     <div class="row">
                         <div class="col-lg-7 thumb-box">
                             <div class="thumb">
                                 <i class="fas fa-heartbeat"></i>
-                                <img src="url({{ Voyager::image(F1::getRowDataOfModel('page', 'despre')->image) }});" alt="Veterinary Clinic">
-                                <img src="url({{ Voyager::image(F1::getRowDataOfModel('page', 'despre')->image_2) }}));" alt="Doctor">
+                                <img src="{{ Voyager::image(F1::getRowDataOfModel('page', 'despre')->image) }}" alt="Despre noi 1" class="shadow-lg">
+                                <img src="{{ Voyager::image(F1::getRowDataOfModel('page', 'despre')->image_2) }}" alt="Despre noi 2" class="shadow-sm">
                             </div>
                         </div>
                         <div class="col-lg-5 info">

@@ -1,6 +1,6 @@
  <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area">
+    <div class="banner-area" style="z-index:10">
         <div id="bootcarousel" class="carousel responsive-top-pad-110p text-large slide carousel-fade animate_text" data-ride="carousel">
 
             <!-- Wrapper for slides -->
@@ -39,11 +39,11 @@
 
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#bootcarousel" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-angle-left" style="color:#55c0ac3e;"></i>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#bootcarousel" data-slide="next">
-                <i class="fa fa-angle-right"></i>
+                <i class="fa fa-angle-right" style="color:#55c0ac3e;"></i>
                 <span class="sr-only">Next</span>
             </a>
 

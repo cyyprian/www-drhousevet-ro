@@ -5,6 +5,8 @@
 @section('content')
   @include('../partials/sliders/slider')
   @include('../partials/elements/prezentare_servicii')
+  @include('..partials/elements/articole_si_faqs')
+  @include('..partials/elements/opening_hours')
 
   <!-- <table class="table table-borderless table-hover">
     <tbody>
@@ -22,15 +24,12 @@
 
 <!--
 About us (modificare componenta Despre):
--adauga 2 imagini
--folosesc componenta despre si componenta servicii
+ok
 -->
 
 <!--
 Doctor Tips:
-*deschide shape
-comp 1 stanga - din home Doctor Tips se face Sfaturi utile cu referinta la articole
-comp 2 dreeapta - din departments v1 componenta faqs (partea dreeapta)
+ok
 -->
 
 <!--
