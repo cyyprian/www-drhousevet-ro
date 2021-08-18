@@ -24,7 +24,7 @@ class F1 {
 
   protected $translate = [
     'service' => ['servicii'],
-    'post' => ['articole'],
+    'article' => ['articole'],
   ];
 
   public function getModelBySlugSubstring($string) {
