@@ -14,7 +14,7 @@
                         <p>
                         {{F1::getRowDataOfModel('page', 'articole')->excerpt}}
                         </p>
-                        <a class="btn btn-md btn-gradient" href="{{ F1::getRowDataOfModel('page','servicii')->title }}">
+                        <a class="btn btn-md btn-gradient" href="{{ F1::getRowDataOfModel('page','articole')->slug }}">
                             {{F1::getRowDataOfModel('page', 'articole')->title}} <i class="fas fa-angle-right"></i></a>
                     </div>
                     <br>
