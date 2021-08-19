@@ -28,7 +28,7 @@
                                                 <a href="servicii/{{$row->slug}}">{{$row->title}}</a>
                                             </h4>
                                             <ul>
-                                                <li>{{$row->excerpt}}</li>
+                                                <li>{{$row->sub_title_short}}</li>
                                             </ul>
                                         </div>
                                         <div class="right-info">

@@ -27,22 +27,22 @@
                                              <a href="articole/{{$row->slug}}"><img src="{{ Voyager::image($row->image) }}" alt="{{$row->title}}">   
                                              </a>
                                         </div>
-                                   <div class="info">
-                                        <span class="date">{{strtoupper($row->updated_at->format('j M'))}}</span>
-                                        <div class="meta">
-                                             <ul>
-                                                  <li>
-                                                       <i class="fas fa-user"></i>
-                                                       <span>{{$row->author}}</span>
-                                                  </li>
-                                             </ul>
+                                        <div class="info">
+                                             <span class="date">{{strtoupper($row->updated_at->format('j M'))}}</span>
+                                             <div class="meta">
+                                                  <ul>
+                                                       <li>
+                                                            <i class="fas fa-user"></i>
+                                                            <span>{{$row->author}}</span>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                             <h4>
+                                             <a href="articole/{{$row->slug}}">{{$row->title}}</a>
+                                             </h4>
+                                             <a class="btn btn-sm btn-theme border circle" href="articole/{{$row->slug}}">{{$row->primary_button_text}} <i class="fas fa-angle-right"></i></a>
                                         </div>
-                                        <h4>
-                                            <a href="articole/{{$row->slug}}">{{$row->title}}</a>
-                                        </h4>
-                                        <a class="btn btn-sm btn-theme border circle" href="articole/{{$row->slug}}">{{$row->excerpt}} <i class="fas fa-angle-right"></i></a>
-                                    </div>
-                                </div>
+                                   </div>
                                 
                             </div>
                             <!-- End Single Item -->

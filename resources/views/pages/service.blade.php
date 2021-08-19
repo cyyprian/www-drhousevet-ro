@@ -1,7 +1,6 @@
 @extends('layouts.site')
 
 @section('content')
-  Continutul paginii singhle service [FILE]
   <!--
     single service page from:
         - department single and:
@@ -11,4 +10,19 @@
                     - other service from:
                         side bar (our departments)
   -->
+
+    @foreach(F1::getDataOfModel('service') as $row)
+    @if ($row->slug == Request::route('slug'))
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area gradient-bg bg-cover shadow dark text-light text-center" 
+          style="background-image: url({{ Voyager::image($row->image) }});">
+          <h1> {{$row->title}}</h1>
+     </div>
+    <!-- End Breadcrumb -->
+
+    @endif
+    @endforeach
+
 @endsection
