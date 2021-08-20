@@ -8,13 +8,7 @@
             <div class="col-lg-6 text-right link">
                 <ul>
                     <li>
-                        <a href="#">Termeni si conditii</a>
-                    </li>
-                    <li>
-                        <a href="#">Protectia datelor</a>
-                    </li>
-                    <li>
-                        <a href="#">Suport</a>
+                        <a href="{{url('termeni-si-conditii')}}">Termeni si conditii</a>
                     </li>
                 </ul>
             </div>
