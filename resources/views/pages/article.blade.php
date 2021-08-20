@@ -76,12 +76,7 @@
                                             </div>
                                         </div> -->
 
-                                        <!-- Start Post Pagination -->
-                                        <div class="post-pagi-area">
-                                            <a href="#"><i class="fas fa-angle-double-left"></i> Articolul precedent</a>
-                                            <a href="#">Urmatorul articol <i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-                                        <!-- End Post Pagination -->
+                                       
                                     </div>
                                 </div>
                             </div>
