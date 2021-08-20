@@ -48,8 +48,10 @@
                                           </p>
                                         </div>
                                           <blockquote>
-                                              {{ $row->quote }}
-                                          </blockquote>      
+                                            <style>p {color: white !important;}</style>
+                                              {!! $row->quote !!}
+                                            <style>p { color: inherit !important;}</style>
+                                          </blockquote>
                                         <div style="color:gray; text-align:justify;">
                                           <p> 
                                               {!! $row->body_2 !!}
