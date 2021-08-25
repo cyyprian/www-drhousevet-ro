@@ -43,13 +43,13 @@
                                    <p>
                                         {{$row->sub_title_long}}
                                    </p>
-                                   <ul>
+                                   <!-- <ul>
                                         <li>Joints</li>
                                         <li>Spine</li>
                                         <li>Sports Medicine</li>
                                         <li>Bones</li>
                                         <li>Spinal Fusion</li>
-                                   </ul>
+                                   </ul> -->
                                    <a class="btn btn-md circle btn-gradient" href="servicii/{{$row->slug}}">{{$row->primary_button_text}} <i class="fas fa-angle-right"></i></a>
                               </div>
                         </div>
