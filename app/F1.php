@@ -21,6 +21,7 @@ class F1 {
     'slide' => \App\Models\Slide::class,
     'general_naming' => \App\Models\GeneralNaming::class,
     'about' => \App\Models\GeneralNaming::class,
+    'terms' => \App\Models\GeneralNaming::class,
   ];
 
   protected $translate = [

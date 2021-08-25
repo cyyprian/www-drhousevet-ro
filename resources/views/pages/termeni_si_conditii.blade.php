@@ -4,14 +4,14 @@
        <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area gradient-bg bg-cover shadow dark text-light text-center" 
-          style="background-image: url({{ Voyager::image(F1::getRowDataOfModel('page', 'despre')->image) }});">
-          <h1> {{F1::getRowDataOfModel('page', 'despre')->title}}</h1>
+          style="background-image: url({{ Voyager::image(F1::getRowDataOfModel('page', 'termeni-si-conditii')->image) }});">
+          <h1> {{F1::getRowDataOfModel('page', 'termeni-si-conditii')->title}}</h1>
      </div>
     <!-- End Breadcrumb -->
     
          <!-- Start Blog
     ============================================= -->
-    @foreach(F1::getDataOfModel('page', 'despre') as $row)
+    @foreach(F1::getDataOfModel('page', 'termeni-si-conditii') as $row)
     @if ($row->slug == Request::route('slug'))
     <div class="blog-area single full-blog full-blog default-padding">
         <div class="container">
@@ -22,14 +22,11 @@
                             <div class="blog-item-box">
                                 <div class="item">
                                     <div class="info">
-                                        <h3>{{F1::getRowDataOfModel('general_naming', 'brand')->name}}</h3>
-                                        <h5>{{F1::getRowDataOfModel('general_naming', 'brand')->description}}</h5>
+                                        <h3>{{$row->sub_title}}</h3>
                                         <br>
                                         <div style="color:gray; text-align:justify;">
                                           <p> 
-                                            <i>
                                               {!! $row->body !!}
-                                            </i>
                                           </p>
                                     </div>
                                 </div>
