@@ -24,6 +24,16 @@
                                 <div class="info">
                                     <h2 style="text-align:center; padding: 1.2rem">{{F1::getRowDataOfModel('page', 'faqs')->sub_title}}</h2>
                                     @include('partials/lists.faqs')
+                                    <a href="{{url('faqs')}}" 
+                        style="margin-left: 1rem;
+                                padding: 0;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                color: #55c0ac;">
+                        
+                    Afla toate raspunsurile
+                </a>
                                 </div>
                             </div>
                             <!-- End Single Item -->
