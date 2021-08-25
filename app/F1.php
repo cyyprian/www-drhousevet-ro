@@ -20,6 +20,7 @@ class F1 {
     'socials' => \App\Models\SocialMedia::class,
     'slide' => \App\Models\Slide::class,
     'general_naming' => \App\Models\GeneralNaming::class,
+    'about' => \App\Models\GeneralNaming::class,
   ];
 
   protected $translate = [
