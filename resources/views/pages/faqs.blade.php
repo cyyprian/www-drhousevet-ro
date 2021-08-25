@@ -16,7 +16,9 @@
      </div>
     <!-- End Breadcrumb -->
 
-<div style="padding: 1rem">
+
+<div class="container" style="padding: 1rem">
+<div class="row">
     <div class="col-lg-12 faqs">
         <div class="accordion" id="accordionExample">
             @foreach(F1::getDataOfModel('faq') as $key=>$row)
@@ -37,4 +39,6 @@
         </div>
     </div>
 </div>
+</div>
+
 @endsection
