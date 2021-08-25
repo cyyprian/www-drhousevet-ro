@@ -43,6 +43,8 @@
 
                     <div class="col-lg-4 right-item">
                         <div class="info-items">
+                            @foreach(F1::getDataOfModel('branches') as $row)
+                            @if ($row->emergency_phone)
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="icon">
@@ -51,11 +53,7 @@
                                 <div class="info">
                                     <h5>Adresa</h5>
                                     <p>
-                                      @foreach(F1::getDataOfModel('branches') as $row)
-                                        @if ($row->emergency_phone)
-                                          {{ $row->address }}
-                                        @endif
-                                      @endforeach
+                                      {{ $row->address }}
                                     </p>
                                 </div>
                             </div>
@@ -66,14 +64,23 @@
                                     <i class="flaticon-call"></i>
                                 </div>
                                 <div class="info">
-                                    <h5>Telefon</h5>
-                                    <p>
-                                      @foreach(F1::getDataOfModel('branches') as $row)
-                                        @if ($row->emergency_phone)
-                                          {{ $row->phone }}
-                                        @endif
-                                      @endforeach
-                                    </p>
+                                    <h5>Telefon Programari</h5>
+                                    <a href = "tel:+4{{$row->phone}}" style="color: #666666; font-weight:normal;">  
+                                        {{ $row->phone}}
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                             <!-- Single Item -->
+                             <div class="item">
+                                <div class="icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="info">
+                                    <h5>Telefon Urgente</h5>
+                                    <a href="tel:+4{{$row->emergency_phone}}" style="color: #666666; font-weight:normal;">  
+                                        {{$row->emergency_phone}}
+                                    </a>
                                 </div>
                             </div>
                             <!-- End Single Item -->
@@ -84,13 +91,9 @@
                                 </div>
                                 <div class="info">
                                     <h5>Email</h5>
-                                    <p>
-                                      @foreach(F1::getDataOfModel('branches') as $row)
-                                        @if ($row->emergency_phone)
+                                    <a href = "mailto: {{$row->email}}" style="color: #666666; font-weight:normal;">  
                                         {{ $row->email }}
-                                        @endif
-                                      @endforeach
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                             <!-- End Single Item -->
@@ -116,6 +119,9 @@
                                 </div>
                             </div>
                             <!-- End Single Item -->
+                           
+                            @endif
+                            @endforeach
                         </div>
                     </div>
 
@@ -124,5 +130,5 @@
         </div>
     </div>
     <!-- End Contact -->
-    
+
 @endsection
