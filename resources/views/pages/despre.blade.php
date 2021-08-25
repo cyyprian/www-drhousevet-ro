@@ -17,7 +17,7 @@
         <div class="container">
             <div class="blog-items">
                 <div class="row">
-                    <div class="blog-content col-lg-10 offset-lg-1 col-md-12" style="padding-bottom: 3rem;">
+                    <div class="blog-content col-lg-10 offset-lg-1 col-md-12">
                         <div class="single-item">
                             <div class="blog-item-box">
                                 <div class="item">
@@ -31,6 +31,7 @@
                                               {!! $row->body !!}
                                             </i>
                                           </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

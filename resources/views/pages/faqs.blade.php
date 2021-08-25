@@ -18,27 +18,27 @@
 
 
 <div class="container" style="padding: 1rem">
-<div class="row">
-    <div class="col-lg-12 faqs">
-        <div class="accordion" id="accordionExample">
-            @foreach(F1::getDataOfModel('faq') as $key=>$row)
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h4 class="mb-0" data-toggle="collapse" data-target="#collapsefaq{{$row->id}}" aria-expanded="true" aria-controls="collapseOne">
-                        {{$row->question}}
-                    </h4>
-                </div>
+    <div class="row">
+        <div class="col-lg-12 faqs">
+            <div class="accordion" id="accordionExample">
+                @foreach(F1::getDataOfModel('faq') as $key=>$row)
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h4 class="mb-0" data-toggle="collapse" data-target="#collapsefaq{{$row->id}}" aria-expanded="true" aria-controls="collapseOne">
+                            {{$row->question}}
+                        </h4>
+                    </div>
 
-                <div id="collapsefaq{{$row->id}}" class="collapse {{$loop->first ? 'show': ''}}" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body" style="text-align:justify">
-                        {!! $row->answer !!}                         
+                    <div id="collapsefaq{{$row->id}}" class="collapse {{$loop->first ? 'show': ''}}" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body" style="text-align:justify">
+                            {!! $row->answer !!}                         
+                        </div>
                     </div>
                 </div>
+                @endforeach
             </div>
-            @endforeach
         </div>
     </div>
-</div>
 </div>
 
 @endsection
