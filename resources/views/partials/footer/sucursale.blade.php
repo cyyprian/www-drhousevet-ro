@@ -5,10 +5,14 @@
             <ul>
                 @foreach(F1::getDataOfModel('branches') as $row)
                     <li>
-                    <strong>{{ $row->name }}:</strong> 
+                    <strong>
+                        <a href="https://maps.google.com/?q=dr%20house%20vet%20tecuci">     
+                            {{ $row->name }}:         
+                        </a>
+                    </strong> 
                    
                     <span>
-                        <a href="https://maps.google.com/?q={{$row->coordinates_north}}, {{$row->coordinates_east}}"
+                        <a href="https://maps.google.com/?q=dr%20house%20vet%20tecuci" 
                         target="_blank"
                         style="margin: 0;
                                 padding: 0;
@@ -20,7 +24,8 @@
                         </a>
                         <br>
                         Addresa:
-                        <a href="https://maps.google.com/?q={{$row->coordinates_north}}, {{$row->coordinates_east}}" target="_blank">
+                        <a href="https://maps.google.com/?q=dr%20house%20vet%20tecuci" 
+                        target="_blank">
                             {{ $row->address }} 
                         </a> 
                         
