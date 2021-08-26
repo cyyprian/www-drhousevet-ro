@@ -11,8 +11,8 @@
      <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area gradient-bg bg-cover shadow dark text-light text-center" 
-          style="background-image: url({{ Voyager::image(F1::getRowDataOfModel('page', 'faqs')->image) }});">
-          <h1> {{F1::getRowDataOfModel('page', 'faqs')->sub_title}}</h1>
+          style="background-image: url({{ Voyager::image(F1::getRowDataOfModel('page', 'intrebari-frecvente')->image) }});">
+          <h1> {{F1::getRowDataOfModel('page', 'intrebari-frecvente')->sub_title}}</h1>
      </div>
     <!-- End Breadcrumb -->
 

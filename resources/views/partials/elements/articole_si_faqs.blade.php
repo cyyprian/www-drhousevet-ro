@@ -22,7 +22,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="info">
-                                    <h2 style="text-align:center; padding: 1.2rem">{{F1::getRowDataOfModel('page', 'faqs')->sub_title}}</h2>
+                                    <h2 style="text-align:center; padding: 1.2rem">{{F1::getRowDataOfModel('page', 'intrebari-frecvente')->sub_title}}</h2>
                                     @include('partials/lists.faqs')
                                     <a href="{{url('faqs')}}" 
                         style="margin-left: 1rem;
