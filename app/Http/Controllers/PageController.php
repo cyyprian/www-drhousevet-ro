@@ -11,49 +11,50 @@ use F1;
 
 class PageController extends Controller
 {
-  protected $data = ['page' => null];
+    protected $data = ['page' => null];
 
-  public function index(Request $request, $slug = 'home')
-  {
-    $this->data['page'] = Page::where([
-      'slug' => $slug,
-      'status' => '1'
-    ])->firstOrFail();
+    public function index(Request $request, $slug = 'home')
+    {
+        $this->data['page'] = Page::where([
+            'slug' => $slug,
+            'status' => '1',
+        ])->firstOrFail();
 
-    F1::setSeoValues(
-      $this->data['page']->title,
-      $this->data['page']->excerpt,
-      \Voyager::image($this->data['page']->thumbnail('medium'))
-    );
+        F1::setSeoValues(
+            $this->data['page']->title,
+            $this->data['page']->excerpt,
+            \Voyager::image($this->data['page']->thumbnail('medium'))
+        );
 
-    $view = 'pages.' . str_replace('-', "_", $slug);
+        $view = 'pages.' . str_replace('-', "_", $slug);
 
-    if(!View::exists($view)) {
-      $view = "pages.page";
+        if (!View::exists($view)) {
+            $view = "pages.page";
+        }
+
+        return view($view, $this->data);
     }
 
-    return view($view, $this->data);
-  }
+    public function row(Request $request, $model, $slug)
+    {
+        $model = F1::getModelBySlugSubstring($model);
 
-  public function row(Request $request, $model, $slug) {
-    $model = F1::getModelBySlugSubstring($model);
+        $data = F1::getRowDataOfModel($model, $slug);
 
-    $data = F1::getRowDataOfModel($model, $slug);
+        $this->data['page'] = $data;
 
-    $this->data['page'] = $data;
+        F1::setSeoValues(
+            $this->data['page']->title,
+            $this->data['page']->excerpt,
+            \Voyager::image($this->data['page']->thumbnail('medium'))
+        );
 
-    F1::setSeoValues(
-      $this->data['page']->title,
-      $this->data['page']->excerpt,
-      \Voyager::image($this->data['page']->thumbnail('medium'))
-    );
+        $view = 'pages.' . str_replace('-', "_", $model);
 
-    $view = 'pages.' . str_replace('-', "_", $model);
+        if (!View::exists($view)) {
+            $view = "pages.page";
+        }
 
-    if(!View::exists($view)) {
-      $view = "pages.page";
+        return view($view, $this->data);
     }
-
-    return view($view, $this->data);
-  }
 }
