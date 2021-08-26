@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-3 logo">
-                    <a href="home">
+                    <a href="{{url('/')}}">
                         <img src="{{ Voyager::image(setting('site.logo_light')) }}" class="logo" alt="Logo">
                     </a>
                 </div>

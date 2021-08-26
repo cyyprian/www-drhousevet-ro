@@ -3,6 +3,9 @@
         <h4 class="widget-title">Linkuri Utile</h4>
         <ul>
             @foreach(F1::getDataOfModel('page') as $row)
+                @if($loop->index === 6)
+                    @break
+                @endif
                 <li><a href="{{ url($row->slug) }}">{{ $row->title }}</a></li>
             @endforeach
         </ul>
