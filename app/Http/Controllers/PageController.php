@@ -34,4 +34,26 @@ class PageController extends Controller
 
     return view($view, $this->data);
   }
+
+  public function row(Request $request, $model, $slug) {
+    $model = F1::getModelBySlugSubstring($model);
+
+    $data = F1::getRowDataOfModel($model, $slug);
+
+    $this->data['page'] = $data;
+
+    F1::setSeoValues(
+      $this->data['page']->title,
+      $this->data['page']->excerpt,
+      \Voyager::image($this->data['page']->thumbnail('medium'))
+    );
+
+    $view = 'pages.' . str_replace('-', "_", $model);
+
+    if(!View::exists($view)) {
+      $view = "pages.page";
+    }
+
+    return view($view, $this->data);
+  }
 }
