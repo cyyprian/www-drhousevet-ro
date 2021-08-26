@@ -1,20 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./resources/js/some.js":
-/*!******************************!*\
-  !*** ./resources/js/some.js ***!
-  \******************************/
-/***/ (() => {
-
-$(document).ready(function ($) {
-  $(".row-page").click(function () {
-    window.location = $(this).data("href");
-  });
-});
-
-/***/ }),
-
 /***/ "./resources/js/test.js":
 /*!******************************!*\
   !*** ./resources/js/test.js ***!
@@ -58,9 +44,7 @@ var __webpack_exports__ = {};
 /*!******************************!*\
   !*** ./resources/js/root.js ***!
   \******************************/
-__webpack_require__(/*! ./test.js */ "./resources/js/test.js");
-
-__webpack_require__(/*! ./some.js */ "./resources/js/some.js");
+__webpack_require__(/*! ./test.js */ "./resources/js/test.js"); // require('./some.js');
 })();
 
 /******/ })()

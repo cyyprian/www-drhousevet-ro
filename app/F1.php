@@ -12,17 +12,52 @@ class F1 {
 
   protected $models = [
     'page' => \App\Models\Page::class,
-    'post' => \App\Models\Post::class,
-    'service' => \App\Models\Services::class,
+    'article' => \App\Models\Article::class,
+    'service' => \App\Models\Service::class,
     'faq' => \App\Models\Faq::class,
     'openinghour' => \App\Models\OpeningHour::class,
+    'branches' => \App\Models\Branch::class,
+    'socials' => \App\Models\SocialMedia::class,
+    'slide' => \App\Models\Slide::class,
+    'general_naming' => \App\Models\GeneralNaming::class,
+    'about' => \App\Models\GeneralNaming::class,
+    'terms' => \App\Models\GeneralNaming::class,
   ];
+
+  protected $translate = [
+    'service' => ['servicii'],
+    'article' => ['articole'],
+  ];
+
+  public function getModelBySlugSubstring($string) {
+    foreach($this->translate as $key => $values) {
+      if(in_array($string, $values)) {
+        return $key;
+      }
+    }
+
+    return null;
+  }
 
   public function getDataOfModel($name) {
     if(!isset($this->models[$name])) abort(404, 'Model does not exist.');
 
     return $this->models[$name]::all();
   }
+
+  public function getRowDataOfModel($name, $slug) {
+    if(!isset($this->models[$name])) abort(404, 'Model does not exist.');
+
+    return $this->models[$name]::where('slug', $slug)->first();
+  }
+
+   //Get ascending sorted data by display_order column
+   public function getSortedDataOfModel($name, $column) {
+    if(!isset($this->models[$name])) abort(404, 'Model does not exist.');
+    return $this->models[$name]::orderBy($column)->get();
+  }
+
+  
 
   public function setSeoValues($title, $description, $image = null) {
     if(!$image) {

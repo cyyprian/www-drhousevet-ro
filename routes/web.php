@@ -26,3 +26,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('{slug}', [PageController::class, 'index']);
+//servicii/chirurgie-generala
+Route::get('{model}/{slug}', [PageController::class, 'row']);
