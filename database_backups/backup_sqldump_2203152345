@@ -1,0 +1,739 @@
+-- MariaDB dump 10.19  Distrib 10.5.15-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: admin_drhousevet
+-- ------------------------------------------------------
+-- Server version	10.5.15-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `articles`
+--
+
+DROP TABLE IF EXISTS `articles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `articles` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `author` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `quote` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body_2` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `primary_button_text` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `articles`
+--
+
+LOCK TABLES `articles` WRITE;
+/*!40000 ALTER TABLE `articles` DISABLE KEYS */;
+INSERT INTO `articles` VALUES (1,'Importanta vaccinarii in primele zile dupa nastere',NULL,'<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>','importanta-vaccinului-in-primele-zile-dupa-nastere',1,'articles/August2021/nIKaBpG62mOJlOFYAqmX.jpeg','2021-08-10 15:08:00','2021-08-25 19:05:30','Dr. Maria Popescu','<p>Pasajul standard de Lorem Ipsum folosit &icirc;ncă din secolul al XVI-lea este reprodus mai jos pentru cei interesaţi. Secţiunile 1.10.32 şi 1.10.33 din \"de Finibus Bonorum et Malorum\" de Cicerone sunt de asemenea reproduse &icirc;n forma lor originală, impreună cu versiunile lor &icirc;n engleză din traducerea de către H. Rackham din 1914.</p>','<p>El &icirc;şi are rădăcinile &icirc;ntr-o bucată a literaturii clasice latine din anul 45 &icirc;.e.n., făc&acirc;nd-o să aibă mai bine de 2000 ani. Profesorul universitar de latină de la colegiul Hampden-Sydney din Virginia, Richard McClintock, a căutat &icirc;n bibliografie unul din cele mai rar folosite cuvinte latine \"consectetur\", &icirc;nt&acirc;lnit &icirc;n pasajul Lorem Ipsum, şi căut&acirc;nd citate ale cuv&acirc;ntului respectiv &icirc;n literatura clasică, a descoperit la modul cel mai sigur sursa provenienţei textului. Lorem Ipsum provine din secţiunile 1.10.32 şi 1.10.33 din \"de Finibus Bonorum et Malorum\" (Extremele Binelui şi ale Răului) de Cicerone, scrisă &icirc;n anul 45 &icirc;.e.n. Această carte este un tratat &icirc;n teoria eticii care a fost foarte popular &icirc;n perioada Renasterii. Primul r&acirc;nd din Lorem Ipsum, \"Lorem ipsum dolor sit amet...\", a fost luat dintr-un r&acirc;nd din secţiunea 1.10.32.</p>','Citeste mai mult'),(2,'Consultatiile aleatorii pot preveni imbolnavirea',NULL,'<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>','consultatiile-aleatorii-pot-preveni-imbolnavirea',1,'articles/August2021/MigN5lKwAqJCe4nqv5hx.jpeg','2021-08-10 15:10:00','2021-08-19 21:34:17','Dr. Ion Popescu','<p>El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc.</p>','<p>Lorem Ipsum a fost macheta standard a industriei &icirc;ncă din secolul al XVI-lea, c&acirc;nd un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul &icirc;n tipografia electronică practic neschimbată. A fost popularizată &icirc;n anii \'60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.</p>','Citeste mai mult');
+/*!40000 ALTER TABLE `articles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `branches`
+--
+
+DROP TABLE IF EXISTS `branches`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `branches` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(160) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `email` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `emergency_phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `office_hours` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `map_zoom` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `branches`
+--
+
+LOCK TABLES `branches` WRITE;
+/*!40000 ALTER TABLE `branches` DISABLE KEYS */;
+INSERT INTO `branches` VALUES (3,'Tecuci HQ','Str Pricipala Nr.1 Tecuci','0987654321','2021-08-10 18:17:00','2021-08-25 18:58:57','tecuci@drhousevet.ro','0123456789','Luni-Vineri 08:00 - 17:00',15);
+/*!40000 ALTER TABLE `branches` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `data_rows`
+--
+
+DROP TABLE IF EXISTS `data_rows`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `data_rows` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `data_type_id` int(10) unsigned NOT NULL,
+  `field` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `required` tinyint(1) NOT NULL DEFAULT 0,
+  `browse` tinyint(1) NOT NULL DEFAULT 1,
+  `read` tinyint(1) NOT NULL DEFAULT 1,
+  `edit` tinyint(1) NOT NULL DEFAULT 1,
+  `add` tinyint(1) NOT NULL DEFAULT 1,
+  `delete` tinyint(1) NOT NULL DEFAULT 1,
+  `details` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order` int(11) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  KEY `data_rows_data_type_id_foreign` (`data_type_id`),
+  CONSTRAINT `data_rows_data_type_id_foreign` FOREIGN KEY (`data_type_id`) REFERENCES `data_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `data_rows`
+--
+
+LOCK TABLES `data_rows` WRITE;
+/*!40000 ALTER TABLE `data_rows` DISABLE KEYS */;
+INSERT INTO `data_rows` VALUES (1,1,'id','number','ID',1,0,0,0,0,0,NULL,1),(2,1,'name','text','Name',1,1,1,1,1,1,NULL,2),(3,1,'email','text','Email',1,1,1,1,1,1,NULL,3),(4,1,'password','password','Password',1,0,0,1,1,0,NULL,4),(5,1,'remember_token','text','Remember Token',0,0,0,0,0,0,NULL,5),(6,1,'created_at','timestamp','Created At',0,1,1,0,0,0,NULL,6),(7,1,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,7),(8,1,'avatar','image','Avatar',0,1,1,1,1,1,NULL,8),(9,1,'user_belongsto_role_relationship','relationship','Role',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsTo\",\"column\":\"role_id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"roles\",\"pivot\":0}',10),(10,1,'user_belongstomany_role_relationship','relationship','Roles',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"user_roles\",\"pivot\":\"1\",\"taggable\":\"0\"}',11),(11,1,'settings','hidden','Settings',0,0,0,0,0,0,NULL,12),(12,2,'id','number','ID',1,0,0,0,0,0,NULL,1),(13,2,'name','text','Name',1,1,1,1,1,1,NULL,2),(14,2,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(15,2,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(16,3,'id','number','ID',1,0,0,0,0,0,NULL,1),(17,3,'name','text','Name',1,1,1,1,1,1,NULL,2),(18,3,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(19,3,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(20,3,'display_name','text','Display Name',1,1,1,1,1,1,NULL,5),(21,1,'role_id','text','Role',1,1,1,1,1,1,NULL,9),(22,4,'id','text','Id',1,0,0,0,0,0,'{}',1),(23,4,'title','text','Titlu',1,1,1,1,1,1,'{}',2),(24,4,'excerpt','text_area','Descriere scurta',0,0,1,1,1,1,'{}',4),(25,4,'body','rich_text_box','Continut',0,0,1,1,1,1,'{}',5),(26,4,'slug','text','Slug',1,0,1,1,1,1,'{\"slugify\":{\"origin\":\"title\"},\"validation\":{\"rule\":\"unique:pages,slug\"}}',6),(28,4,'status','select_dropdown','Status',1,0,1,1,1,1,'{\"default\":\"1\",\"options\":{\"0\":\"INACTIVE\",\"1\":\"ACTIVE\"}}',7),(29,4,'image','image','Imagine',0,1,1,1,1,1,'{\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"50%\"},{\"name\":\"small\",\"scale\":\"10%\"}]}',8),(30,4,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',10),(31,4,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',11),(33,6,'id','text','Id',1,0,0,0,0,0,'{}',1),(34,7,'id','text','Id',1,0,0,0,0,0,'{}',1),(35,8,'id','text','Id',1,0,0,0,0,0,'{}',1),(44,11,'id','text','Id',1,0,0,0,0,0,'{}',1),(45,11,'title','text','Titlu',1,1,1,1,1,1,'{}',2),(46,11,'excerpt','text_area','Descriere scurta',0,0,1,1,1,1,'{}',4),(47,11,'body','rich_text_box','Continut',0,0,1,1,1,1,'{}',6),(48,11,'slug','text','Slug',1,0,1,1,1,1,'{\"slugify\":{\"origin\":\"title\"},\"validation\":{\"rule\":\"unique:pages,slug\"}}',5),(49,11,'status','select_dropdown','Status',1,1,1,1,1,1,'{\"default\":\"1\",\"options\":{\"0\":\"INACTIVE\",\"1\":\"ACTIVE\"}}',10),(50,11,'image','image','Imagine',0,1,1,1,1,1,'{\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"100%\"},{\"name\":\"small\",\"scale\":\"10%\"}]}',11),(51,11,'created_at','timestamp','Created At',0,0,0,0,0,1,'{}',12),(52,11,'updated_at','timestamp','Updated At',0,0,0,0,0,1,'{}',13),(53,6,'title','text','Titlu',1,1,1,1,1,1,'{}',2),(54,6,'excerpt','text_area','Excerpt',0,0,1,1,1,1,'{}',6),(55,6,'body','rich_text_box','Continut',0,0,1,1,1,1,'{}',7),(56,6,'slug','text','Slug',1,0,1,1,1,1,'{\"slugify\":{\"origin\":\"title\"},\"validation\":{\"rule\":\"unique:services,slug\"}}',9),(57,6,'status','select_dropdown','Status',1,1,1,1,1,1,'{\"default\":\"1\",\"options\":{\"0\":\"INACTIVE\",\"1\":\"ACTIVE\"}}',10),(58,6,'image','image','Imagine',0,1,1,1,1,1,'{\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"100%\"},{\"name\":\"small\",\"scale\":\"10%\"}]}',11),(59,6,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',13),(60,6,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',14),(61,7,'question','text_area','Intrebare',1,1,1,1,1,1,'{}',2),(62,7,'answer','rich_text_box','Raspuns',1,0,1,1,1,1,'{}',3),(63,7,'excerpt','text_area','Descriere scurta',0,0,1,1,1,1,'{}',4),(64,7,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',5),(65,7,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',6),(66,8,'day','text','Zi',1,1,1,1,1,1,'{}',2),(67,8,'start','text','Incepere',0,1,1,1,1,1,'{}',3),(68,8,'end','text','Sfarsit',0,1,1,1,1,1,'{}',4),(69,8,'excerpt','text_area','Descriere scurta',0,0,1,1,1,1,'{}',5),(70,13,'id','number','Id',1,0,0,0,0,0,'{}',1),(71,13,'name','text','Nume',1,1,1,1,1,1,'{}',2),(72,13,'address','text','Adresa',1,0,1,1,1,1,'{}',3),(73,13,'phone','text','Telefon',0,1,1,1,1,1,'{}',4),(74,13,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',5),(75,13,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',6),(76,13,'email','text','Email',0,0,1,1,1,1,'{}',7),(77,13,'emergency_phone','text','Telefon urgente',0,1,1,1,1,1,'{}',8),(78,13,'office_hours','text','Program',0,0,1,1,1,1,'{}',9),(79,16,'id','text','Id',1,0,0,0,0,0,'{}',1),(80,16,'name','text','Nume',1,1,1,1,1,1,'{}',2),(81,16,'url','text','Adresa url',1,1,1,1,1,1,'{}',3),(82,16,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',4),(83,16,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',5),(86,18,'id','text','Id',1,0,0,0,0,0,'{}',1),(87,18,'title','text','Titlu',1,1,1,1,1,1,'{}',2),(88,18,'title_bold','text','Titlu evidentiat',1,1,1,1,1,1,'{}',3),(89,18,'description','text','Descriere',1,0,1,1,1,1,'{}',4),(90,18,'primary_button_text','text','Text buton principal',1,0,1,1,1,1,'{}',5),(91,18,'secondary_button_text','text','Text buton secundat',1,0,1,1,1,1,'{}',7),(93,18,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',10),(94,18,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',11),(95,18,'primary_button_link','text','Adresa buton principal',0,0,1,1,1,1,'{}',6),(96,18,'secondary_button_link','text','Adresa buton secundar',0,0,1,1,1,1,'{}',8),(98,18,'image','image','Imagine',0,1,1,1,1,1,'{}',9),(99,18,'display_order','number','Nr. ordine',0,0,1,1,1,1,'{}',12),(100,4,'sub_title','text','Subtitlu',0,0,1,1,1,1,'{}',3),(101,4,'image_2','image','Imagine 2',0,1,1,1,1,1,'{\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"50%\"},{\"name\":\"small\",\"scale\":\"10%\"}]}',9),(102,22,'id','text','Id',1,0,0,0,0,0,'{}',1),(103,22,'name','text','Nume',1,1,1,1,1,1,'{}',2),(104,22,'description','text','Descriere',1,1,1,1,1,1,'{}',3),(105,22,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',5),(106,22,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',6),(108,22,'slug','text','Slug',1,0,1,0,1,0,'{}',6),(109,11,'author','text','Autor',0,1,1,1,1,1,'{}',3),(110,11,'quote','rich_text_box','Citat',0,0,1,1,1,1,'{}',7),(111,11,'body_2','rich_text_box','Continut',0,0,1,1,1,1,'{}',8),(112,6,'sub_title_short','text_area','Subtitlu scurt',0,0,1,1,1,1,'{}',4),(113,6,'sub_title_long','text_area','Subtitlu lung',0,0,1,1,1,1,'{}',5),(114,6,'primary_button_text','text','Text buton principal',0,0,1,1,1,1,'{}',8),(115,11,'primary_button_text','text','Text buton principal',0,0,1,1,1,1,'{}',9),(116,6,'image_2','image','Imagine 2',0,1,1,1,1,1,'{\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"100%\"},{\"name\":\"small\",\"scale\":\"10%\"}]}',12),(117,6,'doctor','text','Doctor',0,0,1,1,1,1,'{}',3),(119,13,'map_zoom','number','Map Zoom',0,0,1,1,1,1,'{}',10),(120,8,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',6),(121,8,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',7);
+/*!40000 ALTER TABLE `data_rows` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `data_types`
+--
+
+DROP TABLE IF EXISTS `data_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `data_types` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name_singular` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name_plural` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `icon` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `model_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `policy_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `controller` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `generate_permissions` tinyint(1) NOT NULL DEFAULT 0,
+  `server_side` tinyint(4) NOT NULL DEFAULT 0,
+  `details` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `data_types_name_unique` (`name`),
+  UNIQUE KEY `data_types_slug_unique` (`slug`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `data_types`
+--
+
+LOCK TABLES `data_types` WRITE;
+/*!40000 ALTER TABLE `data_types` DISABLE KEYS */;
+INSERT INTO `data_types` VALUES (1,'users','users','User','Users','voyager-person','TCG\\Voyager\\Models\\User','TCG\\Voyager\\Policies\\UserPolicy','TCG\\Voyager\\Http\\Controllers\\VoyagerUserController','',1,0,NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(2,'menus','menus','Menu','Menus','voyager-list','TCG\\Voyager\\Models\\Menu',NULL,'','',1,0,NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(3,'roles','roles','Role','Roles','voyager-lock','TCG\\Voyager\\Models\\Role',NULL,'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController','',1,0,NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(4,'pages','pages','Pagina sit','Pagini sit','voyager-file-text','App\\Models\\Page',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-07 22:31:29','2021-08-26 09:44:10'),(6,'services','services','Serviciu','Servicii','voyager-list','App\\Models\\Service',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-07 22:50:36','2021-08-26 09:50:01'),(7,'faqs','faqs','Intrebare frecventa','Intrebari frecvente','voyager-question','App\\Models\\Faq',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-07 22:52:34','2021-08-26 10:08:07'),(8,'opening_hours','opening-hours','Program','Program','voyager-watch','App\\Models\\OpeningHour',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-07 22:57:24','2021-08-26 10:11:33'),(11,'articles','articles','Articol','Articole','voyager-news','App\\Models\\Article',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-08 05:21:36','2021-08-26 09:41:25'),(13,'branches','branches','Sucursala','Sucursale','voyager-shop','App\\Models\\Branch',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-10 17:32:53','2021-08-26 10:14:32'),(16,'social_media','social-media','Mediu social','Medii sociale','voyager-people','App\\Models\\SocialMedia',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-11 08:49:28','2021-08-26 10:16:35'),(18,'slides','slides','Slider','Slidere','voyager-images','App\\Models\\Slide',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-11 16:31:13','2021-08-26 10:18:53'),(21,'general_naming','general-naming','General Naming','General Naming','voyager-treasure','App\\Models\\GeneralNaming',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-12 15:25:29','2021-08-12 15:26:52'),(22,'general_namings','general-namings','Text divers','Texte diverse','voyager-treasure','App\\Models\\GeneralNaming',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2021-08-12 15:29:24','2021-08-26 10:20:10');
+/*!40000 ALTER TABLE `data_types` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `failed_jobs`
+--
+
+DROP TABLE IF EXISTS `failed_jobs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `failed_jobs` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `failed_jobs`
+--
+
+LOCK TABLES `failed_jobs` WRITE;
+/*!40000 ALTER TABLE `failed_jobs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `failed_jobs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `faqs`
+--
+
+DROP TABLE IF EXISTS `faqs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `faqs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `question` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `answer` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faqs`
+--
+
+LOCK TABLES `faqs` WRITE;
+/*!40000 ALTER TABLE `faqs` DISABLE KEYS */;
+INSERT INTO `faqs` VALUES (1,'Cum fac o programare?','<p>Programarile se fac prin contact telefonic, prin trimiterea unui email sau vizitand clinica veterinara. Pentru programarile prin contact telefonic se recomanda folosirea numarului standard, evitand folosirea numarului pentru urgente. Aceasta linie este destinata strict urgentelor medicale.</p>',NULL,'2021-08-10 13:49:26','2021-08-10 13:49:26'),(2,'Am o urgenta. Pot veni la clinica veterinara fara progamare?','<p>Pentru urgente este recomandat contactul telefonic pentru a stabili si asigura starea de sanatate a pacientului. In functie de caz si cu accordul dumneavostra, un medic se va deplasa la adresa sau va astepta sosirea dumneavostra la sediul clinicii veterinare.</p>',NULL,'2021-08-10 13:53:06','2021-08-10 13:53:06'),(3,'Parazitare non-parazitare?','<p><span style=\"color: #666666; font-family: Inter, sans-serif; font-size: 15px; text-align: justify;\">Pentru urgente este recomandat contactul telefonic pentru a stabili si asigura starea de sanatate a pacientului. In functie de caz si cu accordul dumneavostra, un medic se va deplasa la adresa sau va astepta sosirea dumneavostra la sediul clinicii veterinare.</span></p>',NULL,'2021-08-19 21:20:30','2021-08-19 21:20:30');
+/*!40000 ALTER TABLE `faqs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `general_namings`
+--
+
+DROP TABLE IF EXISTS `general_namings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `general_namings` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `general_namings`
+--
+
+LOCK TABLES `general_namings` WRITE;
+/*!40000 ALTER TABLE `general_namings` DISABLE KEYS */;
+INSERT INTO `general_namings` VALUES (3,'Urgente','Ne puteti suna pentru urgente 24/7','2021-08-12 15:38:14','2021-08-12 15:38:14','emergency'),(4,'Peste 10 ani de experienta','A fost popularizată în anii \'60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.','2021-08-12 15:38:51','2021-08-12 17:43:23','experience'),(6,'Dr. House Vet','O echipa profesionista de doctori veterinari','2021-08-25 20:05:38','2021-08-25 20:05:38','brand');
+/*!40000 ALTER TABLE `general_namings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menu_items`
+--
+
+DROP TABLE IF EXISTS `menu_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menu_items` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `menu_id` int(10) unsigned DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `target` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '_self',
+  `icon_class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `parent_id` int(11) DEFAULT NULL,
+  `order` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `route` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `parameters` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menu_items_menu_id_foreign` (`menu_id`),
+  CONSTRAINT `menu_items_menu_id_foreign` FOREIGN KEY (`menu_id`) REFERENCES `menus` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu_items`
+--
+
+LOCK TABLES `menu_items` WRITE;
+/*!40000 ALTER TABLE `menu_items` DISABLE KEYS */;
+INSERT INTO `menu_items` VALUES (1,1,'Panou de control','','_self','voyager-boat','#000000',NULL,1,'2021-08-07 22:23:27','2021-08-26 09:21:01','voyager.dashboard','null'),(2,1,'Media','','_self','voyager-images',NULL,NULL,4,'2021-08-07 22:23:27','2021-08-08 05:20:15','voyager.media.index',NULL),(3,1,'Users','','_self','voyager-person',NULL,NULL,3,'2021-08-07 22:23:27','2021-08-07 22:23:27','voyager.users.index',NULL),(4,1,'Roles','','_self','voyager-lock',NULL,NULL,2,'2021-08-07 22:23:27','2021-08-07 22:23:27','voyager.roles.index',NULL),(5,1,'Tools','','_self','voyager-tools',NULL,NULL,5,'2021-08-07 22:23:27','2021-08-08 05:20:15',NULL,NULL),(6,1,'Menu Builder','','_self','voyager-list',NULL,5,1,'2021-08-07 22:23:27','2021-08-08 05:20:15','voyager.menus.index',NULL),(7,1,'Database','','_self','voyager-data',NULL,5,2,'2021-08-07 22:23:27','2021-08-08 05:20:15','voyager.database.index',NULL),(8,1,'Compass','','_self','voyager-compass',NULL,5,3,'2021-08-07 22:23:27','2021-08-08 05:20:15','voyager.compass.index',NULL),(9,1,'BREAD','','_self','voyager-bread',NULL,5,4,'2021-08-07 22:23:27','2021-08-08 05:20:15','voyager.bread.index',NULL),(10,1,'Setari','','_self','voyager-settings','#000000',NULL,15,'2021-08-07 22:23:27','2021-08-26 09:34:30','voyager.settings.index','null'),(11,1,'Pagini sit','','_self','voyager-file-text','#000000',NULL,7,'2021-08-07 22:31:29','2021-08-26 09:34:25','voyager.pages.index','null'),(13,1,'Servicii','','_self','voyager-list','#000000',NULL,8,'2021-08-07 22:50:36','2021-08-26 09:34:26','voyager.services.index','null'),(14,1,'Intrebari frecvente','','_self','voyager-question','#000000',NULL,9,'2021-08-07 22:52:34','2021-08-26 09:34:26','voyager.faqs.index','null'),(15,1,'Program cabinet','','_self','voyager-watch','#000000',NULL,10,'2021-08-07 22:57:24','2021-08-26 09:34:26','voyager.opening-hours.index','null'),(16,1,'Articole','','_self','voyager-news','#000000',NULL,6,'2021-08-08 05:21:36','2021-08-26 09:34:25','voyager.articles.index','null'),(17,2,'Acasa','','_self',NULL,'#000000',NULL,1,'2021-08-10 11:01:11','2021-08-13 19:27:08',NULL,''),(18,2,'Servicii','servicii','_self',NULL,'#000000',NULL,2,'2021-08-10 11:01:37','2021-08-13 19:27:09',NULL,''),(20,2,'Contact','contact','_self',NULL,'#000000',NULL,5,'2021-08-10 13:46:35','2021-09-17 12:56:29',NULL,''),(21,2,'Elocvent','intrebari-frecvente','_self',NULL,'#000000',NULL,4,'2021-08-10 13:46:48','2021-09-17 12:56:28',NULL,''),(22,2,'Articole','articole','_self',NULL,'#000000',NULL,3,'2021-08-10 13:47:01','2021-08-13 19:27:10',NULL,''),(23,1,'Sucursale','','_self','voyager-shop','#000000',NULL,11,'2021-08-10 17:32:55','2021-08-26 10:15:13','voyager.branches.index','null'),(24,1,'Medii Sociale','','_self','voyager-people','#000000',NULL,12,'2021-08-11 08:49:30','2021-08-26 10:17:06','voyager.social-media.index','null'),(25,2,'Chirurgie generala','servicii/chirurgie-generala','_self',NULL,'#000000',18,1,'2021-08-11 10:41:39','2021-08-13 19:27:09',NULL,''),(26,2,'Vaccinari','servicii/vaccinari','_self',NULL,'#000000',18,3,'2021-08-11 10:42:31','2021-08-19 19:53:34',NULL,''),(27,2,'Despre consultatii','articole/consultatiile-aleatorii-pot-preveni-imbolnavirea','_self',NULL,'#000000',22,1,'2021-08-11 11:32:45','2021-08-11 18:18:02',NULL,''),(28,2,'Importanta vaccinarii','articole/importanta-vaccinului-in-primele-zile-dupa-nastere','_self',NULL,'#000000',22,2,'2021-08-11 11:33:18','2021-08-11 13:42:55',NULL,''),(29,1,'Slidere','','_self','voyager-images','#000000',NULL,13,'2021-08-11 16:31:15','2021-08-26 09:34:27','voyager.slides.index','null'),(31,1,'Texte diverse','','_self','voyager-treasure','#000000',NULL,14,'2021-08-12 15:29:25','2021-08-26 09:34:28','voyager.general-namings.index','null'),(32,2,'Analize laborator','servicii/analize-laborator','_self',NULL,'#000000',18,2,'2021-08-19 19:53:21','2021-08-19 19:53:34',NULL,'');
+/*!40000 ALTER TABLE `menu_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `menus`
+--
+
+DROP TABLE IF EXISTS `menus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menus` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menus_name_unique` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menus`
+--
+
+LOCK TABLES `menus` WRITE;
+/*!40000 ALTER TABLE `menus` DISABLE KEYS */;
+INSERT INTO `menus` VALUES (1,'admin','2021-08-07 22:23:27','2021-08-07 22:23:27'),(2,'site','2021-08-10 10:59:56','2021-08-10 10:59:56');
+/*!40000 ALTER TABLE `menus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_resets_table',1),(3,'2016_01_01_000000_add_voyager_user_fields',1),(4,'2016_01_01_000000_create_data_types_table',1),(5,'2016_05_19_173453_create_menu_table',1),(6,'2016_10_21_190000_create_roles_table',1),(7,'2016_10_21_190000_create_settings_table',1),(8,'2016_11_30_135954_create_permission_table',1),(9,'2016_11_30_141208_create_permission_role_table',1),(10,'2016_12_26_201236_data_types__add__server_side',1),(11,'2017_01_13_000000_add_route_to_menu_items_table',1),(12,'2017_01_14_005015_create_translations_table',1),(13,'2017_01_15_000000_make_table_name_nullable_in_permissions_table',1),(14,'2017_03_06_000000_add_controller_to_data_types_table',1),(15,'2017_04_21_000000_add_order_to_data_rows_table',1),(16,'2017_07_05_210000_add_policyname_to_data_types_table',1),(17,'2017_08_05_000000_add_group_to_settings_table',1),(18,'2017_11_26_013050_add_user_role_relationship',1),(19,'2017_11_26_015000_create_user_roles_table',1),(20,'2018_03_11_000000_add_user_settings',1),(21,'2018_03_14_000000_add_details_to_data_types_table',1),(22,'2018_03_16_000000_make_settings_value_nullable',1),(23,'2019_08_19_000000_create_failed_jobs_table',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `opening_hours`
+--
+
+DROP TABLE IF EXISTS `opening_hours`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `opening_hours` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `day` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `start` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `end` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `opening_hours`
+--
+
+LOCK TABLES `opening_hours` WRITE;
+/*!40000 ALTER TABLE `opening_hours` DISABLE KEYS */;
+INSERT INTO `opening_hours` VALUES (1,'Luni-Vineri','08:00','17:00',NULL,'2021-08-10 13:53:42','2021-08-12 16:04:29'),(7,'Sambata','Urgente',NULL,NULL,'2021-08-10 13:55:35','2021-08-12 15:59:42'),(9,'Duminica','Urgente',NULL,NULL,'2021-08-12 15:59:56','2021-08-12 15:59:56');
+/*!40000 ALTER TABLE `opening_hours` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pages`
+--
+
+DROP TABLE IF EXISTS `pages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pages` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `sub_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pages`
+--
+
+LOCK TABLES `pages` WRITE;
+/*!40000 ALTER TABLE `pages` DISABLE KEYS */;
+INSERT INTO `pages` VALUES (1,'Cabinet veterinar','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.','<p>Continutul paginii acasa</p>','home',1,NULL,'2021-08-07 22:43:00','2021-08-12 16:30:11','It is a long established fact that a reader will be distracted by the readable content',NULL),(4,'Servicii','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.','<p>continut servicii</p>','servicii',1,'pages/August2021/L8Dw8zpA4aZ3zR8JrjRa.jpeg','2021-08-10 10:07:00','2021-08-19 19:09:36','Serviciile noastre',NULL),(5,'Articole','Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic stânjenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text în funcţie de necesitate, astfel făcându-l pe acesta primul generator adevarat de pe Internet.','<p>Continutul paginii articole</p>','articole',1,'pages/August2021/zB89dcv2fEj74kutG5zo.jpeg','2021-08-10 13:42:00','2021-08-18 18:13:53','Sfaturi Medicale',NULL),(6,'Intrebari Frecvente','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.','<p>Continutul paginii faqs</p>','intrebari-frecvente',1,'pages/August2021/RVweRp0C1W6yMxvQx5YS.jpeg','2021-08-10 13:44:00','2021-08-26 11:56:37','Intrebari Frecvente',NULL),(7,'Contact','Vezi locatia pe harta','<p>Continutul paginii contact</p>','contact',1,'pages/August2021/zVlsq6OW23GiWCAIQ5fM.jpeg','2021-08-10 13:45:00','2021-08-25 18:17:56','Contacteaza-ne','pages/August2021/3bfc5D2TvZbnyo9mtRhp.jpeg'),(8,'Despre noi','Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări într-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator','<p>E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci c&acirc;nd se uită la aşezarea &icirc;n pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul \"Conţinut aici, conţinut acolo\", făc&acirc;ndu-l să arate ca o engleză citibilă. Multe pachete de publicare pentru calculator şi editoare de pagini web folosesc acum Lorem Ipsum ca model standard de text, iar o cautare de \"lorem ipsum\" va rezulta &icirc;n o mulţime de site-uri web &icirc;n dezvoltare. Pe parcursul anilor, diferite versiuni au evoluat, uneori din int&acirc;mplare, uneori intenţionat (infiltr&acirc;ndu-se elemente de umor sau altceva de acest gen). Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări &icirc;ntr-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator, care nu sunt c&acirc;tuşi de puţin credibile. Daca vreţi să folosiţi un pasaj de Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic st&acirc;njenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text &icirc;n funcţie de necesitate, astfel făc&acirc;ndu-l pe acesta primul generator adevarat de pe Internet. El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc. In ciuda opiniei publice, Lorem Ipsum nu e un simplu text fără sens. El &icirc;şi are rădăcinile &icirc;ntr-o bucată a literaturii clasice latine din anul 45 &icirc;.e.n., făc&acirc;nd-o să aibă mai bine de 2000 ani. Profesorul universitar de latină de la colegiul Hampden-Sydney din Virginia, Richard McClintock, a căutat &icirc;n bibliografie unul din cele mai rar folosite cuvinte latine \"consectetur\", &icirc;nt&acirc;lnit &icirc;n pasajul Lorem Ipsum, şi căut&acirc;nd citate ale cuv&acirc;ntului respectiv &icirc;n literatura clasică.</p>','despre',1,'pages/August2021/xgcr44scHXGe9Aso85E3.jpeg','2021-08-11 08:15:00','2021-08-25 20:10:02','E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil','pages/August2021/xvygObOSGpSE9mYaj0u9.jpg'),(9,'Termeni si conditii',NULL,'<p>E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci c&acirc;nd se uită la aşezarea &icirc;n pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul \"Conţinut aici, conţinut acolo\", făc&acirc;ndu-l să arate ca o engleză citibilă. Multe pachete de publicare pentru calculator şi editoare de pagini web folosesc acum Lorem Ipsum ca model standard de text, iar o cautare de \"lorem ipsum\" va rezulta &icirc;n o mulţime de site-uri web &icirc;n dezvoltare. Pe parcursul anilor, diferite versiuni au evoluat, uneori din int&acirc;mplare, uneori intenţionat (infiltr&acirc;ndu-se elemente de umor sau altceva de acest gen). Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări &icirc;ntr-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator, care nu sunt c&acirc;tuşi de puţin credibile. Daca vreţi să folosiţi un pasaj de Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic st&acirc;njenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text &icirc;n funcţie de necesitate, astfel făc&acirc;ndu-l pe acesta primul generator adevarat de pe Internet. El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc. In ciuda opiniei publice, Lorem Ipsum nu e un simplu text fără sens. El &icirc;şi are rădăcinile &icirc;ntr-o bucată a literaturii clasice latine din anul 45 &icirc;.e.n., făc&acirc;nd-o să aibă mai bine de 2000 ani. Profesorul universitar de latină de la colegiul Hampden-Sydney din Virginia, Richard McClintock, a căutat &icirc;n bibliografie unul din cele mai rar folosite cuvinte latine \"consectetur\", &icirc;nt&acirc;lnit &icirc;n pasajul Lorem Ipsum, şi căut&acirc;nd citate ale cuv&acirc;ntului respectiv &icirc;n literatura clasică.</p>','termeni-si-conditii',1,'pages/August2021/qxGSX0Ikh9ZrYYwYNKod.jpeg','2021-08-19 21:47:08','2021-08-25 20:21:22','Termeni de utilizare si politica de confidentialitate',NULL),(10,'Eroare 404','Pagina solicitata nu exista','<p style=\"text-align: center;\"><span style=\"color: #404040; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: center;\">Mergi la&nbsp;</span><a style=\"box-sizing: border-box; text-decoration-line: none; color: #0060c0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: center;\" title=\"Dr. HouseVet\" href=\"https://www.drhousevet.ro/\">pagina principală</a></p>','not-found',1,'pages/August2021/txRgI1iotRdo64mrR8F9.png','2021-08-26 11:23:04','2021-09-17 12:35:47',NULL,NULL);
+/*!40000 ALTER TABLE `pages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_resets`
+--
+
+DROP TABLE IF EXISTS `password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  KEY `password_resets_email_index` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+LOCK TABLES `password_resets` WRITE;
+/*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `permission_role`
+--
+
+DROP TABLE IF EXISTS `permission_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `permission_role` (
+  `permission_id` bigint(20) unsigned NOT NULL,
+  `role_id` bigint(20) unsigned NOT NULL,
+  PRIMARY KEY (`permission_id`,`role_id`),
+  KEY `permission_role_permission_id_index` (`permission_id`),
+  KEY `permission_role_role_id_index` (`role_id`),
+  CONSTRAINT `permission_role_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `permission_role_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `permission_role`
+--
+
+LOCK TABLES `permission_role` WRITE;
+/*!40000 ALTER TABLE `permission_role` DISABLE KEYS */;
+INSERT INTO `permission_role` VALUES (1,1),(1,3),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(9,1),(10,1),(11,1),(12,1),(13,1),(14,1),(15,1),(16,1),(17,1),(18,1),(19,1),(20,1),(21,1),(21,3),(22,1),(22,3),(23,1),(23,3),(24,1),(25,1),(26,1),(26,3),(27,1),(27,3),(28,1),(28,3),(29,1),(29,3),(30,1),(30,3),(36,1),(36,3),(37,1),(37,3),(38,1),(38,3),(39,1),(39,3),(40,1),(40,3),(41,1),(41,3),(42,1),(42,3),(43,1),(43,3),(44,1),(44,3),(45,1),(45,3),(46,1),(46,3),(47,1),(47,3),(48,1),(48,3),(49,1),(49,3),(50,1),(50,3),(51,1),(51,3),(52,1),(52,3),(53,1),(53,3),(54,1),(54,3),(55,1),(55,3),(56,1),(56,3),(57,1),(57,3),(58,1),(58,3),(59,1),(59,3),(60,1),(60,3),(61,1),(61,3),(62,1),(62,3),(63,1),(63,3),(64,1),(64,3),(65,1),(65,3),(66,1),(66,3),(67,1),(67,3),(68,1),(68,3),(69,1),(69,3),(70,1),(70,3),(71,1),(71,3),(72,1),(72,3),(73,1),(73,3),(74,1),(74,3),(75,1),(75,3),(76,1),(76,3),(77,1),(77,3),(78,1),(78,3),(79,1),(79,3),(80,1),(80,3);
+/*!40000 ALTER TABLE `permission_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `permissions`
+--
+
+DROP TABLE IF EXISTS `permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `permissions` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `table_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `permissions_key_index` (`key`)
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `permissions`
+--
+
+LOCK TABLES `permissions` WRITE;
+/*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
+INSERT INTO `permissions` VALUES (1,'browse_admin',NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(2,'browse_bread',NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(3,'browse_database',NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(4,'browse_media',NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(5,'browse_compass',NULL,'2021-08-07 22:23:27','2021-08-07 22:23:27'),(6,'browse_menus','menus','2021-08-07 22:23:27','2021-08-07 22:23:27'),(7,'read_menus','menus','2021-08-07 22:23:27','2021-08-07 22:23:27'),(8,'edit_menus','menus','2021-08-07 22:23:27','2021-08-07 22:23:27'),(9,'add_menus','menus','2021-08-07 22:23:27','2021-08-07 22:23:27'),(10,'delete_menus','menus','2021-08-07 22:23:27','2021-08-07 22:23:27'),(11,'browse_roles','roles','2021-08-07 22:23:27','2021-08-07 22:23:27'),(12,'read_roles','roles','2021-08-07 22:23:27','2021-08-07 22:23:27'),(13,'edit_roles','roles','2021-08-07 22:23:27','2021-08-07 22:23:27'),(14,'add_roles','roles','2021-08-07 22:23:27','2021-08-07 22:23:27'),(15,'delete_roles','roles','2021-08-07 22:23:27','2021-08-07 22:23:27'),(16,'browse_users','users','2021-08-07 22:23:27','2021-08-07 22:23:27'),(17,'read_users','users','2021-08-07 22:23:27','2021-08-07 22:23:27'),(18,'edit_users','users','2021-08-07 22:23:27','2021-08-07 22:23:27'),(19,'add_users','users','2021-08-07 22:23:27','2021-08-07 22:23:27'),(20,'delete_users','users','2021-08-07 22:23:27','2021-08-07 22:23:27'),(21,'browse_settings','settings','2021-08-07 22:23:27','2021-08-07 22:23:27'),(22,'read_settings','settings','2021-08-07 22:23:27','2021-08-07 22:23:27'),(23,'edit_settings','settings','2021-08-07 22:23:27','2021-08-07 22:23:27'),(24,'add_settings','settings','2021-08-07 22:23:27','2021-08-07 22:23:27'),(25,'delete_settings','settings','2021-08-07 22:23:27','2021-08-07 22:23:27'),(26,'browse_pages','pages','2021-08-07 22:31:29','2021-08-07 22:31:29'),(27,'read_pages','pages','2021-08-07 22:31:29','2021-08-07 22:31:29'),(28,'edit_pages','pages','2021-08-07 22:31:29','2021-08-07 22:31:29'),(29,'add_pages','pages','2021-08-07 22:31:29','2021-08-07 22:31:29'),(30,'delete_pages','pages','2021-08-07 22:31:29','2021-08-07 22:31:29'),(36,'browse_services','services','2021-08-07 22:50:36','2021-08-07 22:50:36'),(37,'read_services','services','2021-08-07 22:50:36','2021-08-07 22:50:36'),(38,'edit_services','services','2021-08-07 22:50:36','2021-08-07 22:50:36'),(39,'add_services','services','2021-08-07 22:50:36','2021-08-07 22:50:36'),(40,'delete_services','services','2021-08-07 22:50:36','2021-08-07 22:50:36'),(41,'browse_faqs','faqs','2021-08-07 22:52:34','2021-08-07 22:52:34'),(42,'read_faqs','faqs','2021-08-07 22:52:34','2021-08-07 22:52:34'),(43,'edit_faqs','faqs','2021-08-07 22:52:34','2021-08-07 22:52:34'),(44,'add_faqs','faqs','2021-08-07 22:52:34','2021-08-07 22:52:34'),(45,'delete_faqs','faqs','2021-08-07 22:52:34','2021-08-07 22:52:34'),(46,'browse_opening_hours','opening_hours','2021-08-07 22:57:24','2021-08-07 22:57:24'),(47,'read_opening_hours','opening_hours','2021-08-07 22:57:24','2021-08-07 22:57:24'),(48,'edit_opening_hours','opening_hours','2021-08-07 22:57:24','2021-08-07 22:57:24'),(49,'add_opening_hours','opening_hours','2021-08-07 22:57:24','2021-08-07 22:57:24'),(50,'delete_opening_hours','opening_hours','2021-08-07 22:57:24','2021-08-07 22:57:24'),(51,'browse_articles','articles','2021-08-08 05:21:36','2021-08-08 05:21:36'),(52,'read_articles','articles','2021-08-08 05:21:36','2021-08-08 05:21:36'),(53,'edit_articles','articles','2021-08-08 05:21:36','2021-08-08 05:21:36'),(54,'add_articles','articles','2021-08-08 05:21:36','2021-08-08 05:21:36'),(55,'delete_articles','articles','2021-08-08 05:21:36','2021-08-08 05:21:36'),(56,'browse_branches','branches','2021-08-10 17:32:54','2021-08-10 17:32:54'),(57,'read_branches','branches','2021-08-10 17:32:54','2021-08-10 17:32:54'),(58,'edit_branches','branches','2021-08-10 17:32:54','2021-08-10 17:32:54'),(59,'add_branches','branches','2021-08-10 17:32:54','2021-08-10 17:32:54'),(60,'delete_branches','branches','2021-08-10 17:32:55','2021-08-10 17:32:55'),(61,'browse_social_media','social_media','2021-08-11 08:49:29','2021-08-11 08:49:29'),(62,'read_social_media','social_media','2021-08-11 08:49:29','2021-08-11 08:49:29'),(63,'edit_social_media','social_media','2021-08-11 08:49:29','2021-08-11 08:49:29'),(64,'add_social_media','social_media','2021-08-11 08:49:29','2021-08-11 08:49:29'),(65,'delete_social_media','social_media','2021-08-11 08:49:29','2021-08-11 08:49:29'),(66,'browse_slides','slides','2021-08-11 16:31:14','2021-08-11 16:31:14'),(67,'read_slides','slides','2021-08-11 16:31:14','2021-08-11 16:31:14'),(68,'edit_slides','slides','2021-08-11 16:31:14','2021-08-11 16:31:14'),(69,'add_slides','slides','2021-08-11 16:31:14','2021-08-11 16:31:14'),(70,'delete_slides','slides','2021-08-11 16:31:15','2021-08-11 16:31:15'),(71,'browse_general_naming','general_naming','2021-08-12 15:25:29','2021-08-12 15:25:29'),(72,'read_general_naming','general_naming','2021-08-12 15:25:29','2021-08-12 15:25:29'),(73,'edit_general_naming','general_naming','2021-08-12 15:25:29','2021-08-12 15:25:29'),(74,'add_general_naming','general_naming','2021-08-12 15:25:29','2021-08-12 15:25:29'),(75,'delete_general_naming','general_naming','2021-08-12 15:25:29','2021-08-12 15:25:29'),(76,'browse_general_namings','general_namings','2021-08-12 15:29:24','2021-08-12 15:29:24'),(77,'read_general_namings','general_namings','2021-08-12 15:29:24','2021-08-12 15:29:24'),(78,'edit_general_namings','general_namings','2021-08-12 15:29:24','2021-08-12 15:29:24'),(79,'add_general_namings','general_namings','2021-08-12 15:29:25','2021-08-12 15:29:25'),(80,'delete_general_namings','general_namings','2021-08-12 15:29:25','2021-08-12 15:29:25');
+/*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `roles`
+--
+
+DROP TABLE IF EXISTS `roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `roles` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `roles_name_unique` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `roles`
+--
+
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'admin','Administrator','2021-08-07 22:23:27','2021-08-07 22:23:27'),(2,'user','Normal User','2021-08-07 22:23:27','2021-08-07 22:23:27'),(3,'owner','Owner','2021-08-26 09:12:12','2021-08-26 09:12:12');
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `services`
+--
+
+DROP TABLE IF EXISTS `services`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `services` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `sub_title_short` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sub_title_long` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `primary_button_text` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `doctor` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `services`
+--
+
+LOCK TABLES `services` WRITE;
+/*!40000 ALTER TABLE `services` DISABLE KEYS */;
+INSERT INTO `services` VALUES (1,'Vaccinari','Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări într-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator, care nu sunt câtuşi de puţin credibile. Daca vreţi să folosiţi un pasaj de Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic stânjenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text în funcţie de necesitate, astfel făcându-l pe acesta primul generator adevarat de pe Internet. El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc.','<h2>Lista de servicii individuale</h2>\r\n<table class=\"table\" style=\"border-collapse: collapse; width: 100%; height: 52px;\" border=\"1\">\r\n<thead style=\"color: white!important; background-color: #55c0ac !important;\">\r\n<tr style=\"height: 13px;\">\r\n<th style=\"height: 13px;\" scope=\"col\">Denumire procedura</th>\r\n<th style=\"height: 13px;\" scope=\"col\">Pret - lei -</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul A</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;150</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul B</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;80</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul C</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;120</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>','vaccinari',1,'services/August2021/anmX3Goz378PeAupbna7.jpeg','2021-08-10 15:06:00','2021-08-19 21:08:50','Inca din primele zile de viata','A fost popularizată în anii \'60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.','Vezi preturi','services/August2021/8XL5jqgg3PndyBrnZwcE.jpeg','Dr. Asistent Laura Popescu'),(2,'Chirurgie ortopedie','Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări într-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator, care nu sunt câtuşi de puţin credibile. Daca vreţi să folosiţi un pasaj de Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic stânjenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text în funcţie de necesitate, astfel făcându-l pe acesta primul generator adevarat de pe Internet. El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc.','<h2>Lista de servicii individuale</h2>\r\n<table class=\"table\" style=\"border-collapse: collapse; width: 100%; height: 52px;\" border=\"1\">\r\n<thead style=\"color: white!important; background-color: #55c0ac !important;\">\r\n<tr style=\"height: 13px;\">\r\n<th style=\"height: 13px;\" scope=\"col\">Denumire procedura</th>\r\n<th style=\"height: 13px;\" scope=\"col\">Pret - lei -</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul A</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;150</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul B</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;80</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Servicul C</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;120</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>','chirurgie-generala',1,'services/August2021/DSJ1ajoj5TOhNqN5z2tN.jpeg','2021-08-10 15:07:00','2021-08-19 21:08:21','Cu anestezie totala sau partiala','Lorem Ipsum provine din secţiunile 1.10.32 şi 1.10.33 din \"de Finibus Bonorum et Malorum\" (Extremele Binelui şi ale Răului) de Cicerone, scrisă în anul 45 î.e.n. Această carte este un tratat în teoria eticii care a fost foarte popular în perioada Renasterii.','Vezi preturi','services/August2021/JckfF8wGUbXVMDX0OEye.jpeg','Dr. Maria Popescu'),(3,'Analize laborator','Există o mulţime de variaţii disponibile ale pasajelor Lorem Ipsum, dar majoritatea lor au suferit alterări într-o oarecare măsură prin infiltrare de elemente de umor, sau de cuvinte luate aleator, care nu sunt câtuşi de puţin credibile. Daca vreţi să folosiţi un pasaj de Lorem Ipsum, trebuie să vă asiguraţi că nu conţine nimic stânjenitor ascuns printre randuri. Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text în funcţie de necesitate, astfel făcându-l pe acesta primul generator adevarat de pe Internet. El utilizează un dicţionar de peste 200 cuvinte din latina, combinate cu o cantitate considerabilă de modele de structuri de propoziţii, pentru a genera Lorem Ipsum care arată decent. Astfel, Lorem Ipsum-ul generat nu conţine repetiţii, infiltrări de elemente de umor sau de cuvinte non-caracteristice, etc.','<h2>Lista de servicii individuale</h2>\r\n<table class=\"table\" style=\"border-collapse: collapse; width: 100%; height: 52px;\" border=\"1\">\r\n<thead style=\"color: white!important; background-color: #55c0ac !important;\">\r\n<tr style=\"height: 13px;\">\r\n<th style=\"height: 13px;\" scope=\"col\">Denumire procedura</th>\r\n<th style=\"height: 13px;\" scope=\"col\">Pret - lei -</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul A</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;150</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul B</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;80</td>\r\n</tr>\r\n<tr style=\"height: 13px;\">\r\n<td style=\"width: 420.969px; height: 13px;\">&nbsp;Serviciul C</td>\r\n<td style=\"width: 421.031px; height: 13px;\">&nbsp;120</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>','analize-laborator',1,'services/August2021/oVQ86NIQza3JBiEdgyyE.jpeg','2021-08-12 14:26:00','2021-08-19 21:09:20','Gama completa de analize','Toate generatoarele de Lorem Ipsum de pe Internet tind să repete bucăţi de text în funcţie de necesitate, astfel făcându-l pe acesta primul generator adevarat de pe Internet.','Vezi preturi','services/August2021/bGprqwHyUeWac02ZToNX.png','Dr. Ion Popescu');
+/*!40000 ALTER TABLE `services` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `settings`
+--
+
+DROP TABLE IF EXISTS `settings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `settings` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `details` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` int(11) NOT NULL DEFAULT 1,
+  `group` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `settings_key_unique` (`key`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `settings`
+--
+
+LOCK TABLES `settings` WRITE;
+/*!40000 ALTER TABLE `settings` DISABLE KEYS */;
+INSERT INTO `settings` VALUES (1,'site.title','Site Title',NULL,'','text',1,'Site'),(2,'site.description','Site Description',NULL,'','text',2,'Site'),(3,'site.logo','Site Logo','settings/August2021/ScqK1lACY9yBWgKSoIMO.png','','image',3,'Site'),(4,'site.google_analytics_tracking_id','Google Analytics Tracking ID',NULL,'','text',4,'Site'),(5,'admin.bg_image','Admin Background Image','settings/August2021/AzTzv8ZfPoOGhwxmR2aB.jpg','','image',5,'Admin'),(6,'admin.title','Admin Title','Dr. HouseVet','','text',1,'Admin'),(7,'admin.description','Admin Description','Administrare Dr. HouseVet','','text',2,'Admin'),(8,'admin.loader','Admin Loader','settings/August2021/IaL2FzZcJ9wOgAcUItjz.png','','image',3,'Admin'),(9,'admin.icon_image','Admin Icon Image','settings/August2021/Jtvems7QispnPcbvxgKx.png','','image',4,'Admin'),(10,'admin.google_analytics_client_id','Google Analytics Client ID (used for admin dashboard)',NULL,'','text',1,'Admin'),(11,'site.representative_photo','Representative photo','settings/August2021/98ZYt9AUJgT1UgXtaL9f.png',NULL,'image',6,'Site'),(13,'site.icon','Site Icon','settings/August2021/TGQXxGG7FbBaQcsJ5Ih8.png',NULL,'image',7,'Site'),(17,'site.logo_light','Site logo light','settings/August2021/58OnYTbEvSLpjOxsIR6C.png',NULL,'image',8,'Site');
+/*!40000 ALTER TABLE `settings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `slides`
+--
+
+DROP TABLE IF EXISTS `slides`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `slides` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Title',
+  `title_bold` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Bold Title',
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Description',
+  `primary_button_text` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Button text',
+  `secondary_button_text` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Button text',
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `primary_button_link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `secondary_button_link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `display_order` int(11) DEFAULT 1,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `slides`
+--
+
+LOCK TABLES `slides` WRITE;
+/*!40000 ALTER TABLE `slides` DISABLE KEYS */;
+INSERT INTO `slides` VALUES (2,'Clinica Veterinara','Profesionala','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.','Servicii Medicale','Contacteaza-ne','slides/August2021/lTuvptm7Enw1a3KiznXx.jpeg','2021-08-11 16:43:18','2021-08-12 09:16:39','servicii','contact',1),(3,'Sfaturi pentru','Animale','Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.','Descopera articole','Contacteaza-ne','slides/August2021/CzChyNY7cV0gDL4jAU5r.jpeg','2021-08-11 16:47:56','2021-08-12 09:16:29','articole','contact',2);
+/*!40000 ALTER TABLE `slides` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `social_media`
+--
+
+DROP TABLE IF EXISTS `social_media`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `social_media` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `social_media`
+--
+
+LOCK TABLES `social_media` WRITE;
+/*!40000 ALTER TABLE `social_media` DISABLE KEYS */;
+INSERT INTO `social_media` VALUES (1,'facebook-f','https://facebook.com/','2021-08-11 08:59:54','2021-08-11 08:59:54'),(2,'youtube','https://youtube.com/','2021-08-11 10:20:11','2021-08-11 10:20:11'),(3,'instagram','https://instagram.com/','2021-08-11 10:20:30','2021-08-11 10:20:30'),(4,'twitter','https://twitter.com/','2021-08-11 10:20:00','2021-08-11 10:20:00');
+/*!40000 ALTER TABLE `social_media` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `translations`
+--
+
+DROP TABLE IF EXISTS `translations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `translations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `table_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `column_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `foreign_key` int(10) unsigned NOT NULL,
+  `locale` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `translations_table_name_column_name_foreign_key_locale_unique` (`table_name`,`column_name`,`foreign_key`,`locale`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `translations`
+--
+
+LOCK TABLES `translations` WRITE;
+/*!40000 ALTER TABLE `translations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `translations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_roles`
+--
+
+DROP TABLE IF EXISTS `user_roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_roles` (
+  `user_id` bigint(20) unsigned NOT NULL,
+  `role_id` bigint(20) unsigned NOT NULL,
+  PRIMARY KEY (`user_id`,`role_id`),
+  KEY `user_roles_user_id_index` (`user_id`),
+  KEY `user_roles_role_id_index` (`role_id`),
+  CONSTRAINT `user_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `user_roles_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_roles`
+--
+
+LOCK TABLES `user_roles` WRITE;
+/*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` bigint(20) unsigned DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `avatar` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'users/default.png',
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `settings` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_email_unique` (`email`),
+  KEY `users_role_id_foreign` (`role_id`),
+  CONSTRAINT `users_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,1,'Ciprian','ciprian@devz.ro','users/default.png',NULL,'$2y$10$bfDQYmSas9CvWsIB.btzuOUa1xyUl8uUlOhFI115xbnX/kmcKm29W',NULL,NULL,NULL,NULL),(2,1,'Alin','Tur8atu@icloud.com','users/default.png',NULL,'$2y$10$pwnAI7axEpm1Mm206e9F1.Kfq9mxmGHCuBuktkvGo0emsVH9qSNK6','3juKJ93raQafjX52FtoVG75IPdfx7XMZiMnWJVomg1fezjQhLXDN4D6gNVea',NULL,NULL,NULL),(3,3,'Dr. HouseVet','dr.housevet2020@gmail.com','users/default.png',NULL,'$2y$10$Y.gkfwTgs5XD5MMibW3iR.VVnOVr8tewmKk5DOBQw1svWhSBezLM6',NULL,'{\"locale\":\"ro\"}','2021-08-26 09:13:00','2021-08-26 09:13:00');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'admin_drhousevet'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-03-15 23:45:27
